@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <title>objectDiagram</title>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="337px" preserveAspectRatio="none" style="width:1087px;height:337px;background:#FFFFFF;" version="1.1" viewBox="0 0 1087 337" width="1087px" zoomAndPan="magnify">
+  <defs>
+    <filter height="300%" id="fvlwat4a21bry" width="300%" x="-1" y="-1">
+      <feGaussianBlur result="blurOut" stdDeviation="2"/>
+      <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+      <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/>
+      <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+    </filter>
+  </defs>
+  <g>
+    <g class="entity" data-qualified-name="dbMgr" data-source-line="11" id="ent0002">
+      <rect fill="#FFFFFF" filter="url(#fvlwat4a21bry)" height="60.8906" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="243.9844" x="267.8489" y="248.78"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="220.9238" x="279.3792" y="263.7751">dbManager : DatabaseManager</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="268.8489" x2="510.8333" y1="269.0769" y2="269.0769"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="231.9844" x="273.8489" y="286.072">databaseName = "todo_data.db"</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97.9385" x="273.8489" y="302.3689">isOpen = true</text>
+    </g>
+    <g class="entity" data-qualified-name="authMgr" data-source-line="16" id="ent0003">
+      <rect fill="#FFFFFF" filter="url(#fvlwat4a21bry)" height="44.5938" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="214.9766" x="139.3589" y="127.89"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="200.9766" x="146.3589" y="142.8851">authManager : AuthManager</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="140.3589" x2="353.3355" y1="148.1869" y2="148.1869"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125.1865" x="145.3589" y="165.182">isLoggedIn = true</text>
+    </g>
+    <g class="entity" data-qualified-name="user" data-source-line="20" id="ent0004">
+      <rect fill="#FFFFFF" filter="url(#fvlwat4a21bry)" height="60.8906" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="167.3574" x="65.1689" y="248.78"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="153.3574" x="72.1689" y="263.7751">currentUser : Account</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="66.1689" x2="231.5263" y1="269.0769" y2="269.0769"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42.3145" x="71.1689" y="286.072">id = 1</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147.5947" x="71.1689" y="302.3689">username = "Denys"</text>
+    </g>
+    <g class="entity" data-qualified-name="taskMgr" data-source-line="25" id="ent0005">
+      <rect fill="#FFFFFF" filter="url(#fvlwat4a21bry)" height="44.5938" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="212.3516" x="389.6689" y="127.89"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="198.3516" x="396.6689" y="142.8851">taskManager : TaskManager</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="390.6689" x2="601.0205" y1="148.1869" y2="148.1869"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161.2871" x="395.6689" y="165.182">cachedTasksCount = 2</text>
+    </g>
+    <g class="entity" data-qualified-name="mainWin" data-source-line="29" id="ent0006">
+      <rect fill="#FFFFFF" filter="url(#fvlwat4a21bry)" height="60.8906" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="207.0332" x="512.3289" y="7"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="193.0332" x="519.3289" y="21.9951">mainWindow : MainWindow</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="513.3289" x2="718.3621" y1="27.2969" y2="27.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106.5859" x="518.3289" y="44.292">isVisible = true</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166.0791" x="518.3289" y="60.5889">currentTheme = "Dark"</text>
+    </g>
+    <g class="entity" data-qualified-name="t1" data-source-line="34" id="ent0007">
+      <rect fill="#FFFFFF" filter="url(#fvlwat4a21bry)" height="93.4844" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="279.8252" x="546.9289" y="232.49"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="84.5264" x="644.5783" y="247.4851">task1 : Task</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="547.9289" x2="825.7541" y1="252.7869" y2="252.7869"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60.1289" x="552.9289" y="269.782">id = 101</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="267.8252" x="552.9289" y="286.0789">title = "Зробити лабу з Архітектури"</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103.3252" x="552.9289" y="302.3757">priority = High</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107.2012" x="552.9289" y="318.6726">status = Active</text>
+    </g>
+    <g class="entity" data-qualified-name="t2" data-source-line="41" id="ent0008">
+      <rect fill="#FFFFFF" filter="url(#fvlwat4a21bry)" height="93.4844" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="213.4619" x="862.1089" y="232.49"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="84.5264" x="926.5767" y="247.4851">task2 : Task</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="863.1089" x2="1074.5708" y1="252.7869" y2="252.7869"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60.1289" x="868.1089" y="269.782">id = 102</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201.4619" x="868.1089" y="286.0789">title = "Сходити в магазин"</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98.9639" x="868.1089" y="302.3757">priority = Low</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140.0068" x="868.1089" y="318.6726">status = Completed</text>
+    </g>
+    <g class="entity" data-qualified-name="w1" data-source-line="48" id="ent0009">
+      <rect fill="#FFFFFF" filter="url(#fvlwat4a21bry)" height="44.5938" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="197.75" x="636.9689" y="127.89"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="183.75" x="643.9689" y="142.8851">widget1 : TaskItemWidget</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="637.9689" x2="833.7189" y1="148.1869" y2="148.1869"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125.6855" x="642.9689" y="165.182">isChecked = false</text>
+    </g>
+    <g class="entity" data-qualified-name="w2" data-source-line="52" id="ent0010">
+      <rect fill="#FFFFFF" filter="url(#fvlwat4a21bry)" height="44.5938" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="197.75" x="869.9689" y="127.89"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="183.75" x="876.9689" y="142.8851">widget2 : TaskItemWidget</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="870.9689" x2="1066.7189" y1="148.1869" y2="148.1869"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121.1123" x="875.9689" y="165.182">isChecked = true</text>
+    </g>
+    <!--link mainWin to authMgr-->
+    <g class="link" data-entity-1="ent0006" data-entity-2="ent0003" data-link-type="dependency" data-source-line="57" id="lnk11">
+      <path codeLine="57" d="M512.0789,37.97 C402.9289,37.97 246.8389,37.97 246.8389,37.97 C246.8389,37.97 246.8389,88.69 246.8389,121.48" fill="none" id="mainWin-to-authMgr" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#2980B9" points="246.8389,127.48,250.8389,118.48,246.8389,122.48,242.8389,118.48,246.8389,127.48" style="stroke:#2980B9;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169.127" x="164.7089" y="34.0369">посилання на менеджер</text>
+    </g>
+    <!--link mainWin to taskMgr-->
+    <g class="link" data-entity-1="ent0006" data-entity-2="ent0005" data-link-type="dependency" data-source-line="58" id="lnk12">
+      <path codeLine="58" d="M557.1689,68.25 C557.1689,87.03 557.1689,104.61 557.1689,121.64" fill="none" id="mainWin-to-taskMgr" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#2980B9" points="557.1689,127.64,561.1689,118.64,557.1689,122.64,553.1689,118.64,557.1689,127.64" style="stroke:#2980B9;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169.127" x="387.1689" y="94.0169">посилання на менеджер</text>
+    </g>
+    <!--reverse link mainWin to w1-->
+    <g class="link" data-entity-1="ent0006" data-entity-2="ent0009" data-link-type="composition" data-source-line="59" id="lnk13">
+      <path codeLine="59" d="M678.1689,80.25 C678.1689,99.03 678.1689,110.61 678.1689,127.64" fill="none" id="mainWin-backto-w1" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#2980B9" points="678.1689,68.25,674.1689,74.25,678.1689,80.25,682.1689,74.25,678.1689,68.25" style="stroke:#2980B9;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="132.1772" x="545.1689" y="111.0169">містить UI-елемент</text>
+    </g>
+    <!--reverse link mainWin to w2-->
+    <g class="link" data-entity-1="ent0006" data-entity-2="ent0010" data-link-type="composition" data-source-line="60" id="lnk14">
+      <path codeLine="60" d="M731.8489,37.97 C835.9689,37.97 968.8389,37.97 968.8389,37.97 C968.8389,37.97 968.8389,94.69 968.8389,127.48" fill="none" id="mainWin-backto-w2" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#2980B9" points="719.8489,37.97,725.8489,41.97,731.8489,37.97,725.8489,33.97,719.8489,37.97" style="stroke:#2980B9;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="132.1772" x="756.0989" y="34.0369">містить UI-елемент</text>
+    </g>
+    <!--link w1 to t1-->
+    <g class="link" data-entity-1="ent0009" data-entity-2="ent0007" data-link-type="dependency" data-source-line="62" id="lnk15">
+      <path codeLine="62" d="M731.8589,172.96 C731.8589,189.31 731.8589,205.93 731.8589,226.1" fill="none" id="w1-to-t1" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#2980B9" points="731.8589,232.1,735.8589,223.1,731.8589,227.1,727.8589,223.1,731.8589,232.1" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#000000" points="736.8589,199.0964,739.7979,190.0513,733.92,190.0513,736.8589,199.0964" style="stroke:#000000;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="120.5483" x="745.8589" y="198.5969">представляє дані</text>
+    </g>
+    <!--link w2 to t2-->
+    <g class="link" data-entity-1="ent0010" data-entity-2="ent0008" data-link-type="dependency" data-source-line="63" id="lnk16">
+      <path codeLine="63" d="M968.8389,172.96 C968.8389,189.31 968.8389,205.93 968.8389,226.1" fill="none" id="w2-to-t2" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#2980B9" points="968.8389,232.1,972.8389,223.1,968.8389,227.1,964.8389,223.1,968.8389,232.1" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#000000" points="838.8389,216.0964,841.7779,207.0513,835.9,207.0513,838.8389,216.0964" style="stroke:#000000;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="120.5483" x="847.8389" y="215.5969">представляє дані</text>
+    </g>
+    <!--reverse link taskMgr to t1-->
+    <g class="link" data-entity-1="ent0005" data-entity-2="ent0007" data-link-type="aggregation" data-source-line="65" id="lnk17">
+      <path codeLine="65" d="M565.2889,184.96 C565.2889,201.31 565.2889,211.93 565.2889,232.1" fill="none" id="taskMgr-backto-t1" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="none" points="565.2889,172.96,561.2889,178.96,565.2889,184.96,569.2889,178.96,565.2889,172.96" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#000000" points="570.2889,199.0964,573.2279,190.0513,567.35,190.0513,570.2889,199.0964" style="stroke:#000000;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="105.606" x="579.2889" y="198.5969">зберігає в QList</text>
+    </g>
+    <!--reverse link taskMgr to t2-->
+    <g class="link" data-entity-1="ent0005" data-entity-2="ent0008" data-link-type="aggregation" data-source-line="66" id="lnk18">
+      <path codeLine="66" d="M583.6589,184.88 C583.6589,199.18 583.6589,202.97 583.6589,202.97 C583.6589,202.97 866.0389,202.97 866.0389,202.97 C866.0389,202.97 866.0389,216.54 866.0389,232.24" fill="none" id="taskMgr-backto-t2" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="none" points="583.6589,172.88,579.6589,178.88,583.6589,184.88,587.6589,178.88,583.6589,172.88" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#000000" points="614.3701,212.3634,605.9357,207.9689,604.9634,213.7658,614.3701,212.3634" style="stroke:#000000;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="105.606" x="618.4389" y="216.0369">зберігає в QList</text>
+    </g>
+    <!--link taskMgr to dbMgr-->
+    <g class="link" data-entity-1="ent0005" data-entity-2="ent0002" data-link-type="dependency" data-source-line="68" id="lnk19">
+      <path codeLine="68" d="M450.7489,172.96 C450.7489,193.94 450.7489,219.25 450.7489,242.45" fill="none" id="taskMgr-to-dbMgr" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#2980B9" points="450.7489,248.45,454.7489,239.45,450.7489,243.45,446.7489,239.45,450.7489,248.45" style="stroke:#2980B9;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93.7803" x="356.7489" y="206.7769">використовує</text>
+    </g>
+    <!--link authMgr to dbMgr-->
+    <g class="link" data-entity-1="ent0003" data-entity-2="ent0002" data-link-type="dependency" data-source-line="69" id="lnk20">
+      <path codeLine="69" d="M311.0889,172.96 C311.0889,193.94 311.0889,219.25 311.0889,242.45" fill="none" id="authMgr-to-dbMgr" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#2980B9" points="311.0889,248.45,315.0889,239.45,311.0889,243.45,307.0889,239.45,311.0889,248.45" style="stroke:#2980B9;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93.7803" x="217.0889" y="206.7769">використовує</text>
+    </g>
+    <!--link authMgr to user-->
+    <g class="link" data-entity-1="ent0003" data-entity-2="ent0004" data-link-type="dependency" data-source-line="70" id="lnk21">
+      <path codeLine="70" d="M185.9389,172.96 C185.9389,193.94 185.9389,219.25 185.9389,242.45" fill="none" id="authMgr-to-user" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#2980B9" points="185.9389,248.45,189.9389,239.45,185.9389,243.45,181.9389,239.45,185.9389,248.45" style="stroke:#2980B9;stroke-width:1;"/>
+      <polygon fill="#000000" points="18.9389,207.2764,21.8779,198.2313,16,198.2313,18.9389,207.2764" style="stroke:#000000;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157.6885" x="27.9389" y="206.7769">зберігає поточну сесію</text>
+    </g>
+    <?plantuml-src dLJDJXin4BxlKrZf0QYKbkof81g9XaEHGgjAK8wLi-jctIJhoFOsGXKIFqAzLAK716VU0592elpn2lORTUpTR3Q1jhIH4iKpdx_vPZmpeaR39kQuWLZb4_4a-k8W-Bp2NgtAMHJw9LPd7Eq6L9BOmxXFU6nzugwyMAwiMFiwvwmrQzvtHCfUfo6HUqs269S1opXi48_na71KMCuuH81zrg9X5KaU4STPGEfI7wcs6ki3rL4ZDTAdI8tLzO8-KtrzfCzLEm-Elkh2xr3TgO4-rGV6Z1PL5-aBVOB0EWQIiVuA13qrHFeGZbTm6AlXafFK8BSM5VtA5Wvn5LIjeWqiSGKBabZMdaV57C820QRARSNy1F46DmXwYNAI-Uo3CJxpApdmK_6sIKBms5psdMma7CbW6cjzUahZM4GIYOeogrQ9l_aRDY_Yd8HoHyHidWVrbIbJPCoMneVh1VXZB66YUeE4Uo8tHoYng4tbRKzFAQb59F8yx0N4DoXHCf61rfqZR60Qxj8G7XVujj93IfVuaspVKq4hTJ995YB42Mu7916DUUqXpOL4xLHc8PFviibTKccPS-e2UWfQIVMW6tf83Q0bhlKnWhPHFw27JlGvE3gspOu1sZDlskIKSIhtWE0rhGPW4HBBIC1vtPFqCtb0b7jFb9iLvSw8kjGd8Efc8ggDeAklr4_uTg5tHtCQogoLbL1YZMQTIEBFgMXHlqhaf3YRaZHshILLr4hA94e1yMh42Fk8wu8yoEF-WSUznpDfLnZb2zLUqAUGID-aDeGflSqEC-GuJ7A-C_y1QoOSBPPfM1DBpgH7ylbYEXshyNGVGcq6TgJjWXYfArCtip0wKCjRrT47CzSdtViVrv_cywPSgpO1kqdWgVGtjBDf5j70hY6ugOzcRxYFkU40iPLd-U_iphj9jbNRhhOp1890A9Ibw02fHRkFGZkJf1deYIDqeVixTbr2Wnbq6xqhKo41FGDs_m9EqKPEl23XGXkgshURksTLZLKR1kdCcRpTFuEZUB_TLv9Py330y9mTu3ZNtr7n5m00?>
+  </g>
+</svg>
+
+
+</body>
+</html>

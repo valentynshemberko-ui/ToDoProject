@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <title>DeploymentDiagram</title>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="955px" preserveAspectRatio="none" style="width:964px;height:955px;background:#FFFFFF;" version="1.1" viewBox="0 0 964 955" width="964px" zoomAndPan="magnify">
+  <defs>
+    <filter height="300%" id="f7kmngve1ntp4" width="300%" x="-1" y="-1">
+      <feGaussianBlur result="blurOut" stdDeviation="2"/>
+      <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+      <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/>
+      <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+    </filter>
+  </defs>
+  <g>
+    <!--cluster PC-->
+    <g class="cluster" data-qualified-name="PC" data-source-line="27" id="ent0002">
+      <polygon fill="#ECEFF1" filter="url(#f7kmngve1ntp4)" points="104.16,110.27,114.16,100.27,947.58,100.27,947.58,928.27,937.58,938.27,104.16,938.27,104.16,110.27" style="stroke:#34495E;stroke-width:1;"/>
+      <line style="stroke:#34495E;stroke-width:1;" x1="937.58" x2="947.58" y1="110.27" y2="100.27"/>
+      <line style="stroke:#34495E;stroke-width:1;" x1="104.16" x2="937.58" y1="110.27" y2="110.27"/>
+      <line style="stroke:#34495E;stroke-width:1;" x1="937.58" x2="937.58" y1="110.27" y2="938.27"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="65.0098" x="489.3651" y="126.2651">«Device»</text>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="314.0361" x="364.8519" y="142.562">Персональний комп'ютер користувача</text>
+    </g>
+    <!--cluster OS-->
+    <g class="cluster" data-qualified-name="PC.OS" data-source-line="30" id="ent0003">
+      <polygon fill="#ECEFF1" filter="url(#f7kmngve1ntp4)" points="136.16,190.27,146.16,180.27,915.58,180.27,915.58,896.27,905.58,906.27,136.16,906.27,136.16,190.27" style="stroke:#34495E;stroke-width:1;"/>
+      <line style="stroke:#34495E;stroke-width:1;" x1="905.58" x2="915.58" y1="190.27" y2="180.27"/>
+      <line style="stroke:#34495E;stroke-width:1;" x1="136.16" x2="905.58" y1="190.27" y2="190.27"/>
+      <line style="stroke:#34495E;stroke-width:1;" x1="905.58" x2="905.58" y1="190.27" y2="906.27"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="180.4141" x="431.663" y="206.2651">«Execution Environment»</text>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="164.4248" x="439.6576" y="222.562">Операційна система</text>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="83.9111" x="479.9144" y="238.8589">(Windows)</text>
+    </g>
+    <!--cluster qt-->
+    <g class="cluster" data-qualified-name="PC.OS.qt" data-source-line="36" id="ent0005">
+      <rect fill="#FFFFFF" filter="url(#f7kmngve1ntp4)" height="210" rx="5" ry="5" style="stroke:#2980B9;stroke-width:1;" width="328.91" x="554.67" y="664.27"/>
+      <polygon fill="#FFFFFF" points="866.58,669.27,866.58,683.27,878.58,683.27,878.58,675.27,872.58,669.27,866.58,669.27" style="stroke:#2980B9;stroke-width:1;"/>
+      <line style="stroke:#2980B9;stroke-width:1;" x1="872.58" x2="872.58" y1="669.27" y2="675.27"/>
+      <line style="stroke:#2980B9;stroke-width:1;" x1="878.58" x2="872.58" y1="675.27" y2="675.27"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="131.6396" x="653.3052" y="679.2651">«Shared Libraries»</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="110.3047" x="663.9727" y="695.562">Бібліотеки Qt</text>
+    </g>
+    <!--cluster dbNode-->
+    <g class="cluster" data-qualified-name="PC.OS.dbNode" data-source-line="43" id="ent0009">
+      <path d="M536.15,504.27 C536.15,494.27 613.28,494.27 613.28,494.27 C613.28,494.27 690.41,494.27 690.41,504.27 L690.41,622.27 C690.41,632.27 613.28,632.27 613.28,632.27 C613.28,632.27 536.15,632.27 536.15,622.27 L536.15,504.27" fill="#FFFFFF" filter="url(#f7kmngve1ntp4)" style="stroke:#C0392B;stroke-width:1;"/>
+      <path d="M536.15,504.27 C536.15,514.27 613.28,514.27 613.28,514.27 C613.28,514.27 690.41,514.27 690.41,504.27" fill="none" style="stroke:#C0392B;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="62.8291" x="581.8654" y="529.2651">«SQLite»</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="106.4355" x="560.0622" y="545.562">Локальна БД</text>
+    </g>
+    <!--cluster res-->
+    <g class="cluster" data-qualified-name="PC.OS.res" data-source-line="48" id="ent0011">
+      <path d="M539.76,268.27 L679.4788,268.27 A7.5,7.5 0 0 1 684.4788,273.27 L691.4788,290.5669 L687.8,290.5669 A5,5 0 0 1 692.8,295.5669 L692.8,457.27 A5,5 0 0 1 687.8,462.27 L539.76,462.27 A5,5 0 0 1 534.76,457.27 L534.76,273.27 A5,5 0 0 1 539.76,268.27" fill="#F8F9FA" filter="url(#f7kmngve1ntp4)" style="stroke:#7F8C8D;stroke-width:1.5;"/>
+      <line style="stroke:#7F8C8D;stroke-width:1.5;" x1="534.76" x2="691.4788" y1="290.5669" y2="290.5669"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="143.7188" x="538.76" y="283.2651">Локальні ресурси</text>
+    </g>
+    <!--entity app-->
+    <g class="entity" data-qualified-name="PC.OS.app" data-source-line="33" id="ent0004">
+      <rect fill="#FFFFFF" filter="url(#f7kmngve1ntp4)" height="55.5938" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="127.8291" x="152.16" y="560.47"/>
+      <polygon fill="#FFFFFF" points="262.9891,565.47,262.9891,579.47,274.9891,579.47,274.9891,571.47,268.9891,565.47,262.9891,565.47" style="stroke:#2980B9;stroke-width:0.5;"/>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="268.9891" x2="268.9891" y1="565.47" y2="571.47"/>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="274.9891" x2="268.9891" y1="571.47" y2="571.47"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="94.9033" x="163.6229" y="586.4651">«Executable»</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97.8291" x="162.16" y="602.762">ToDoManager</text>
+    </g>
+    <!--entity QtCore-->
+    <g class="entity" data-qualified-name="PC.OS.qt.QtCore" data-source-line="37" id="ent0006">
+      <path d="M578.67,819.12 L578.67,845.4169 A5,5 0 0 0 583.67,850.4169 L642.8888,850.4169 A5,5 0 0 0 647.8888,845.4169 L647.8888,824.12 L637.8888,814.12 L583.67,814.12 A5,5 0 0 0 578.67,819.12" fill="#F1F1F1" filter="url(#f7kmngve1ntp4)" style="stroke:#181818;stroke-width:0.5;"/>
+      <path d="M637.8888,814.12 L637.8888,819.12 A5,5 0 0 0 642.8888,824.12 L647.8888,824.12" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49.2188" x="588.67" y="837.1151">QtCore</text>
+    </g>
+    <!--entity QtGui-->
+    <g class="entity" data-qualified-name="PC.OS.qt.QtGui" data-source-line="38" id="ent0007">
+      <path d="M583.22,748.12 L583.22,774.4169 A5,5 0 0 0 588.22,779.4169 L638.3401,779.4169 A5,5 0 0 0 643.3401,774.4169 L643.3401,753.12 L633.3401,743.12 L588.22,743.12 A5,5 0 0 0 583.22,748.12" fill="#F1F1F1" filter="url(#f7kmngve1ntp4)" style="stroke:#181818;stroke-width:0.5;"/>
+      <path d="M633.3401,743.12 L633.3401,748.12 A5,5 0 0 0 638.3401,753.12 L643.3401,753.12" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40.1201" x="593.22" y="766.1151">QtGui</text>
+    </g>
+    <!--entity QtSql-->
+    <g class="entity" data-qualified-name="PC.OS.qt.QtSql" data-source-line="39" id="ent0008">
+      <path d="M801.41,819.12 L801.41,845.4169 A5,5 0 0 0 806.41,850.4169 L854.5819,850.4169 A5,5 0 0 0 859.5819,845.4169 L859.5819,824.12 L849.5819,814.12 L806.41,814.12 A5,5 0 0 0 801.41,819.12" fill="#F1F1F1" filter="url(#f7kmngve1ntp4)" style="stroke:#181818;stroke-width:0.5;"/>
+      <path d="M849.5819,814.12 L849.5819,819.12 A5,5 0 0 0 854.5819,824.12 L859.5819,824.12" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38.1719" x="811.41" y="837.1151">QtSql</text>
+    </g>
+    <!--entity dbFile-->
+    <g class="entity" data-qualified-name="PC.OS.dbNode.dbFile" data-source-line="44" id="ent0010">
+      <rect fill="#FFFFFF" filter="url(#f7kmngve1ntp4)" height="55.5938" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="122.2646" x="552.15" y="560.47"/>
+      <polygon fill="#FFFFFF" points="657.4146,565.47,657.4146,579.47,669.4146,579.47,669.4146,571.47,663.4146,565.47,657.4146,565.47" style="stroke:#2980B9;stroke-width:0.5;"/>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="663.4146" x2="663.4146" y1="565.47" y2="571.47"/>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="669.4146" x2="663.4146" y1="571.47" y2="571.47"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="41.5762" x="587.4942" y="586.4651">«File»</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92.2646" x="562.15" y="602.762">todo_data.db</text>
+    </g>
+    <!--entity qss-->
+    <g class="entity" data-qualified-name="PC.OS.res.qss" data-source-line="49" id="ent0012">
+      <path d="M560.76,407.12 L560.76,433.4169 A5,5 0 0 0 565.76,438.4169 L660.7922,438.4169 A5,5 0 0 0 665.7922,433.4169 L665.7922,412.12 L655.7922,402.12 L565.76,402.12 A5,5 0 0 0 560.76,407.12" fill="#F1F1F1" filter="url(#f7kmngve1ntp4)" style="stroke:#181818;stroke-width:0.5;"/>
+      <path d="M655.7922,402.12 L655.7922,407.12 A5,5 0 0 0 660.7922,412.12 L665.7922,412.12" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85.0322" x="570.76" y="425.1151">styles (QSS)</text>
+    </g>
+    <!--entity icons-->
+    <g class="entity" data-qualified-name="PC.OS.res.icons" data-source-line="50" id="ent0013">
+      <path d="M562.55,336.12 L562.55,362.4169 A5,5 0 0 0 567.55,367.4169 L659.007,367.4169 A5,5 0 0 0 664.007,362.4169 L664.007,341.12 L654.007,331.12 L567.55,331.12 A5,5 0 0 0 562.55,336.12" fill="#F1F1F1" filter="url(#f7kmngve1ntp4)" style="stroke:#181818;stroke-width:0.5;"/>
+      <path d="M654.007,331.12 L654.007,336.12 A5,5 0 0 0 659.007,341.12 L664.007,341.12" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81.457" x="572.55" y="354.1151">icons (PNG)</text>
+    </g>
+    <g class="entity" data-qualified-name="GMN17" data-source-line="61" id="ent0018">
+      <path d="M6,11 L6,71.5313 A5,5 0 0 0 11,76.5313 L421.147,76.5313 A5,5 0 0 0 426.147,71.5313 L426.147,16 L416.147,6 L11,6 A5,5 0 0 0 6,11" fill="#FEFFDD" filter="url(#f7kmngve1ntp4)" style="stroke:#181818;stroke-width:0.5;"/>
+      <path d="M416.147,6 L416.147,13.5 A2.5,2.5 0 0 0 418.647,16 L426.147,16 L416.147,6" fill="#FEFFDD" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="369.5859" x="12" y="23.0669">Діаграма показує розгортання Legacy-версії системи.</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="399.147" x="12" y="38.1997">Це повністю локальний (standalone) десктопний додаток.</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="374.7593" x="12" y="53.3325">Усі компоненти, включно з базою даних, зберігаються</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="382.4399" x="12" y="68.4653">та виконуються на одній фізичній машині користувача.</text>
+    </g>
+    <!--link app to qt-->
+    <g class="link" data-entity-1="ent0004" data-entity-2="ent0005" data-link-type="dependency" data-source-line="54" id="lnk14">
+      <path d="M216.58,616.47 C216.58,651.66 216.58,707.27 216.58,707.27 C216.58,707.27 311.16,707.27 407.9575,707.27 C456.3563,707.27 505.3094,707.27 543.2716,707.27 C545.6442,707.27 547.9739,707.27 550.2579,707.27 C551.3998,707.27 546.5304,707.27 547.6491,707.27" fill="none" id="app-to-qt" style="stroke:#181818;stroke-width:1;stroke-dasharray:7,7;"/>
+      <polygon fill="#181818" points="553.6491,707.27,544.6491,703.27,548.6491,707.27,544.6491,711.27,553.6491,707.27" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="213.1797" x="155.21" y="720.3369">«uses» (Динамічне лінкування)</text>
+    </g>
+    <!--link app to dbFile-->
+    <g class="link" data-entity-1="ent0004" data-entity-2="ent0010" data-link-type="dependency" data-source-line="55" id="lnk15">
+      <path d="M280.33,588.27 C355.2,588.27 472.03,588.27 545.73,588.27" fill="none" id="app-to-dbFile" style="stroke:#181818;stroke-width:1;stroke-dasharray:7,7;"/>
+      <polygon fill="#181818" points="551.73,588.27,542.73,584.27,546.73,588.27,542.73,592.27,551.73,588.27" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90.7969" x="325.03" y="601.3369">«read / write»</text>
+    </g>
+    <!--link app to res-->
+    <g class="link" data-entity-1="ent0004" data-entity-2="ent0011" data-link-type="dependency" data-source-line="56" id="lnk16">
+      <path d="M248.58,560.18 C248.58,486.84 248.58,295.27 248.58,295.27 C248.58,295.27 335.53,295.27 424.5188,295.27 C446.7659,295.27 469.1405,295.27 490.3158,295.27 C500.9035,295.27 511.1913,295.27 521.0134,295.27 C523.469,295.27 525.8954,295.27 528.2902,295.27 C529.4875,295.27 530.677,295.27 531.8582,295.27 C532.4488,295.27 527.0373,295.27 527.6237,295.27" fill="none" id="app-to-res" style="stroke:#181818;stroke-width:1;stroke-dasharray:7,7;"/>
+      <polygon fill="#181818" points="533.6237,295.27,524.6237,291.27,528.6237,295.27,524.6237,299.27,533.6237,295.27" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43.6909" x="254.18" y="308.3369">«load»</text>
+    </g>
+    <!--link PC to GMN17-->
+    <g class="link" data-entity-1="ent0002" data-entity-2="ent0018" data-link-type="association" data-source-line="61" id="lnk19">
+      <path d="M216.58,100.0753 C216.58,99.8397 216.58,99.6041 216.58,99.3683 C216.58,91.8231 216.58,84.155 216.58,76.97" fill="none" id="PC-GMN17" style="stroke:#181818;stroke-width:1;stroke-dasharray:7,7;"/>
+    </g>
+    <?plantuml-src bLLTQnjN47tNhxYe3vQXLHqxeLOnXZPVBsuQeq1V2k5gzwwyPBtNldiLnnH3xAHD0y4cnDWFXPRIqcTLjgeFs_9VkFkFUcQqNKb89dH1bdLdxioPSsPc8nLOORKmONt32ZyqohEXZWl9ip3UaaPk2gCRiUzf4oiZRYsC6P8DwUkTCAuBQnfgp125iRAxMqfeOpTqeJ0dtE_fWUkwY_J4TLmp_IazIO-4QxiBV2xnkKeFO6gDnOYrhyGF1O7dQ-azgpEAkphIHdoYF1K4juOsRNnbilEbsxShTnIVFz2npKuNlILrPw6mDnPS6Xi6qhCt9GZucKwmM5bUg5Nu_2jZzCxayNW6NrfPaudwlncyXQNAOcqYLA0Zs6yCj1nK0ZaTw8jWsLls4OZO_vDvxwPlt1LKw0btdRx4ptsm_XAcNe7PBhhVN1i7-su0loRKUlUVVnz7b-vwBZs4Zl3Xapp6AzU2g6zSioXa8XxV5IihzzJpq5Ehgnbi_aDjG9UXzpdYjN3xhMiB-eSJKCuhjC8HUsUGVdNNV8URnlN8IG0X9-RcQNuVbxuBOtHYCi_vlwqY__qNocjG8ulxyVFGw7XJnJQ7aqFAO7r0zWk6bDNR10rKw6j0wgS7eeIK6GT0GSIGSvFHC9a3TqOW2Szy7Zbli-8JVKz_8sDPLuOnogsj7AIiHI1g9gvJKW5L_eD40wRw151UCuKzv6gn2FrP6Trx0FsR9sx0JFLTLwnRphvjaRow8OtonLfOCzA4AfaWXvuWZ230EiR8gE9CoyD6EDjGtOv6XhsPfRr7QHrYxvnfxAO_YlJ8zGNhq9_eFbQXvoxow_bm5Tql4zvDYdlCDVgrHzH0g7DzBRHggheHKrRx-Yc5BFkrxEe3gcDbXRx6b9bTo0G2w4FYGAfNF4XTo3Liq-wd0b8CsnnIZ2JBnhluaK2CpAXafaY9tOrWAgrNgyCPs4wI6MwXfsDuFNxqSEZ5lpzItgbhpK6O3lSFT_-ve55FzsyQN6ON_LqkhrAdVGaY6mdtLyaTumPvN-85GCi8qqyT2ag6IsGOPdugJYO9nJ9A-k9piMDOrIbFeeZS8YtzpBn7Mp3MLecQjbPl2XrWIS7aZf6xEPfSr9Tfq07jnuBdkkFEQCeWOuPEhAcwz7O_0rxUbYZbT78bTSiK_2-gxdguLU13qtiugxrBYPMnBoCTgtaQXpRj6aGQu7AsZcXTOaxuiC_1_w2y-Lvc3VWjIds6X7t4FsI61y9r11O1JTk00EJp1iSE36r-1PmXEdPx-WvnZwW1gDunXS77o3oSD89qHJiP0pfwl_01aPd-J5fd8ATV5UM2Ydr1glmB?>
+  </g>
+</svg>
+
+
+</body>
+</html>

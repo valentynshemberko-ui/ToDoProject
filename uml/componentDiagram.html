@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <title>componentDiagramAfterRefactoring</title>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="647px" preserveAspectRatio="none" style="width:1198px;height:647px;background:#FFFFFF;" version="1.1" viewBox="0 0 1198 647" width="1198px" zoomAndPan="magnify">
+   <defs>
+      <filter height="300%" id="fk1z0xge6phcr" width="300%" x="-1" y="-1">
+         <feGaussianBlur result="blurOut" stdDeviation="2"/>
+         <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+         <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/>
+         <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+      </filter>
+   </defs>
+   <g>
+      <!--cluster ToDoManager (?????????? Executable)-->
+      <g class="cluster" data-qualified-name="ToDoManager ........... Executable." data-source-line="23" id="ent0002">
+         <polygon fill="#ECEFF1" filter="url(#fk1z0xge6phcr)" points="16,16,26,6,887,6,887,620.3,877,630.3,16,630.3,16,16" style="stroke:#7F8C8D;stroke-width:1;"/>
+         <line style="stroke:#7F8C8D;stroke-width:1;" x1="877" x2="887" y1="16" y2="6"/>
+         <line style="stroke:#7F8C8D;stroke-width:1;" x1="16" x2="877" y1="16" y2="16"/>
+         <line style="stroke:#7F8C8D;stroke-width:1;" x1="877" x2="877" y1="16" y2="630.3"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="314.2754" x="290.3623" y="31.9951">ToDoManager (&#1052;&#1086;&#1085;&#1086;&#1083;&#1110;&#1090;&#1085;&#1080;&#1081; Executable)</text>
+      </g>
+      <!--cluster UI-->
+      <g class="cluster" data-qualified-name="ToDoManager ........... Executable..UI" data-source-line="25" id="ent0003">
+         <rect fill="#F8F9FA" filter="url(#fk1z0xge6phcr)" height="238.71" rx="5" ry="5" style="stroke:#BDC3C7;stroke-width:1;" width="360" x="56" y="70"/>
+         <rect fill="#F8F9FA" height="10" style="stroke:#BDC3C7;stroke-width:1;" width="15" x="396" y="75"/>
+         <rect fill="#F8F9FA" height="2" style="stroke:#BDC3C7;stroke-width:1;" width="4" x="394" y="77"/>
+         <rect fill="#F8F9FA" height="2" style="stroke:#BDC3C7;stroke-width:1;" width="4" x="394" y="81"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="208.7012" x="131.6494" y="95.9951">UI (&#1043;&#1088;&#1072;&#1092;&#1110;&#1095;&#1085;&#1080;&#1081; &#1110;&#1085;&#1090;&#1077;&#1088;&#1092;&#1077;&#1081;&#1089;)</text>
+      </g>
+      <!--cluster Logic-->
+      <g class="cluster" data-qualified-name="ToDoManager ........... Executable..Logic" data-source-line="31" id="ent0007">
+         <rect fill="#F8F9FA" filter="url(#fk1z0xge6phcr)" height="113.3" rx="5" ry="5" style="stroke:#BDC3C7;stroke-width:1;" width="370" x="456" y="195.41"/>
+         <rect fill="#F8F9FA" height="10" style="stroke:#BDC3C7;stroke-width:1;" width="15" x="806" y="200.41"/>
+         <rect fill="#F8F9FA" height="2" style="stroke:#BDC3C7;stroke-width:1;" width="4" x="804" y="202.41"/>
+         <rect fill="#F8F9FA" height="2" style="stroke:#BDC3C7;stroke-width:1;" width="4" x="804" y="206.41"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="231.2598" x="525.3701" y="221.4051">Business Logic (&#1052;&#1077;&#1085;&#1077;&#1076;&#1078;&#1077;&#1088;&#1080;)</text>
+      </g>
+      <!--cluster Data-->
+      <g class="cluster" data-qualified-name="ToDoManager ........... Executable..Data" data-source-line="36" id="ent0010">
+         <rect fill="#F8F9FA" filter="url(#fk1z0xge6phcr)" height="241.59" rx="5" ry="5" style="stroke:#BDC3C7;stroke-width:1;" width="418" x="65" y="348.71"/>
+         <rect fill="#F8F9FA" height="10" style="stroke:#BDC3C7;stroke-width:1;" width="15" x="463" y="353.71"/>
+         <rect fill="#F8F9FA" height="2" style="stroke:#BDC3C7;stroke-width:1;" width="4" x="461" y="355.71"/>
+         <rect fill="#F8F9FA" height="2" style="stroke:#BDC3C7;stroke-width:1;" width="4" x="461" y="359.71"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="185.8623" x="181.0688" y="374.7051">Data Access (&#1057;&#1093;&#1086;&#1074;&#1080;&#1097;&#1072;)</text>
+      </g>
+      <!--cluster Utils-->
+      <g class="cluster" data-qualified-name="ToDoManager ........... Executable..Utils" data-source-line="42" id="ent0014">
+         <rect fill="#F8F9FA" filter="url(#fk1z0xge6phcr)" height="113.3" rx="5" ry="5" style="stroke:#BDC3C7;stroke-width:1;" width="316" x="523" y="477"/>
+         <rect fill="#F8F9FA" height="10" style="stroke:#BDC3C7;stroke-width:1;" width="15" x="819" y="482"/>
+         <rect fill="#F8F9FA" height="2" style="stroke:#BDC3C7;stroke-width:1;" width="4" x="817" y="484"/>
+         <rect fill="#F8F9FA" height="2" style="stroke:#BDC3C7;stroke-width:1;" width="4" x="817" y="488"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="165.4707" x="598.2646" y="502.9951">Utilities (&#1044;&#1086;&#1087;&#1086;&#1084;&#1110;&#1078;&#1085;&#1110;)</text>
+      </g>
+      <!--cluster DB-->
+      <g class="cluster" data-qualified-name="DB" data-source-line="58" id="ent0023">
+         <path d="M927,472 C927,462 1026.5,462 1026.5,462 C1026.5,462 1126,462 1126,472 L1126,580.3 C1126,590.3 1026.5,590.3 1026.5,590.3 C1026.5,590.3 927,590.3 927,580.3 L927,472" fill="#F8F9FA" filter="url(#fk1z0xge6phcr)" style="stroke:#BDC3C7;stroke-width:1;"/>
+         <path d="M927,472 C927,482 1026.5,482 1026.5,482 C1026.5,482 1126,482 1126,472" fill="none" style="stroke:#BDC3C7;stroke-width:1;"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="71.4082" x="990.7959" y="496.9951">&#1060;&#1072;&#1081;&#1083; &#1041;&#1044;</text>
+      </g>
+      <!--entity MainWindow-->
+      <g class="entity" data-qualified-name="ToDoManager ........... Executable..UI.MainWindow" data-source-line="26" id="ent0004">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="128.9287" x="79.54" y="113"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="188.4687" y="118"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="186.4687" y="120"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="186.4687" y="124"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88.9287" x="94.54" y="145.9951">MainWindow</text>
+      </g>
+      <!--entity AuthWindow-->
+      <g class="entity" data-qualified-name="ToDoManager ........... Executable..UI.AuthWindow" data-source-line="27" id="ent0005">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="128.3203" x="243.84" y="113"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="352.1603" y="118"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="350.1603" y="120"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="350.1603" y="124"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88.3203" x="258.84" y="145.9951">AuthWindow</text>
+      </g>
+      <!--entity SettingsWindow-->
+      <g class="entity" data-qualified-name="ToDoManager ........... Executable..UI.SettingsWindow" data-source-line="28" id="ent0006">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="152.9297" x="79.54" y="238.41"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="212.4697" y="243.41"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="210.4697" y="245.41"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="210.4697" y="249.41"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112.9297" x="94.54" y="271.4051">SettingsWindow</text>
+      </g>
+      <!--entity TaskManager-->
+      <g class="entity" data-qualified-name="ToDoManager ........... Executable..Logic.TaskManager" data-source-line="32" id="ent0008">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="133.8984" x="480.05" y="238.41"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="593.9484" y="243.41"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="591.9484" y="245.41"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="591.9484" y="249.41"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93.8984" x="495.05" y="271.4051">TaskManager</text>
+      </g>
+      <!--entity AuthManager-->
+      <g class="entity" data-qualified-name="ToDoManager ........... Executable..Logic.AuthManager" data-source-line="33" id="ent0009">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="134.1787" x="648.91" y="238.41"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="763.0887" y="243.41"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="761.0887" y="245.41"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="761.0887" y="249.41"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94.1787" x="663.91" y="271.4051">AuthManager</text>
+      </g>
+      <!--entity DatabaseManager-->
+      <g class="entity" data-qualified-name="ToDoManager ........... Executable..Data.DatabaseManager" data-source-line="37" id="ent0011">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="168.167" x="88.92" y="391.71"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="237.087" y="396.71"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="235.087" y="398.71"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="235.087" y="402.71"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128.167" x="103.92" y="424.7051">DatabaseManager</text>
+      </g>
+      <!--entity TaskRepository-->
+      <g class="entity" data-qualified-name="ToDoManager ........... Executable..Data.TaskRepository" data-source-line="38" id="ent0012">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="147.6045" x="292.2" y="391.71"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="419.8045" y="396.71"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="417.8045" y="398.71"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="417.8045" y="402.71"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107.6045" x="307.2" y="424.7051">TaskRepository</text>
+      </g>
+      <!--entity AccountRepository-->
+      <g class="entity" data-qualified-name="ToDoManager ........... Executable..Data.AccountRepository" data-source-line="39" id="ent0013">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="171.8447" x="89.08" y="520"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="240.9247" y="525"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="238.9247" y="527"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="238.9247" y="531"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131.8447" x="104.08" y="552.9951">AccountRepository</text>
+      </g>
+      <!--entity Logger-->
+      <g class="entity" data-qualified-name="ToDoManager ........... Executable..Utils.Logger" data-source-line="43" id="ent0015">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="88.5078" x="546.75" y="520"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="615.2578" y="525"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="613.2578" y="527"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="613.2578" y="531"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48.5078" x="561.75" y="552.9951">Logger</text>
+      </g>
+      <!--entity AppSettings-->
+      <g class="entity" data-qualified-name="ToDoManager ........... Executable..Utils.AppSettings" data-source-line="44" id="ent0016">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="124.7725" x="670.61" y="520"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="775.3825" y="525"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="773.3825" y="527"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="773.3825" y="531"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84.7725" x="685.61" y="552.9951">AppSettings</text>
+      </g>
+      <!--entity todo_data.db-->
+      <g class="entity" data-qualified-name="DB.todo_data.db" data-source-line="59" id="ent0024">
+         <rect fill="#FFFFFF" filter="url(#fk1z0xge6phcr)" height="46.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="132.2646" x="950.87" y="520"/>
+         <rect fill="#FFFFFF" height="10" style="stroke:#2980B9;stroke-width:0.5;" width="15" x="1063.1346" y="525"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="1061.1346" y="527"/>
+         <rect fill="#FFFFFF" height="2" style="stroke:#2980B9;stroke-width:0.5;" width="4" x="1061.1346" y="531"/>
+         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92.2646" x="965.87" y="552.9951">todo_data.db</text>
+      </g>
+      <g class="entity" data-qualified-name="GMN26" data-source-line="65" id="ent0027">
+         <path d="M913.92,105.88 L913.92,166.4113 A5,5 0 0 0 918.92,171.4113 L1181.0841,171.4113 A5,5 0 0 0 1186.0841,166.4113 L1186.0841,110.88 L1176.0841,100.88 L918.92,100.88 A5,5 0 0 0 913.92,105.88" fill="#FEFFDD" filter="url(#fk1z0xge6phcr)" style="stroke:#181818;stroke-width:0.5;"/>
+         <path d="M1176.0841,100.88 L1176.0841,108.38 A2.5,2.5 0 0 0 1178.5841,110.88 L1186.0841,110.88 L1176.0841,100.88" fill="#FEFFDD" style="stroke:#181818;stroke-width:1;"/>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="247.0317" x="919.92" y="117.9469">&#1059; &#1089;&#1090;&#1072;&#1088;&#1110;&#1081; &#1072;&#1088;&#1093;&#1110;&#1090;&#1077;&#1082;&#1090;&#1091;&#1088;&#1110; &#1074;&#1089;&#1110; &#1082;&#1086;&#1084;&#1087;&#1086;&#1085;&#1077;&#1085;&#1090;&#1080;</text>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="192.042" x="919.92" y="133.0797">&#1082;&#1086;&#1084;&#1087;&#1110;&#1083;&#1102;&#1102;&#1090;&#1100;&#1089;&#1103; &#1074; &#1086;&#1076;&#1080;&#1085; &#1092;&#1072;&#1081;&#1083;.</text>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="245.3877" x="919.92" y="148.2125">UI &#1084;&#1072;&#1108; &#1087;&#1088;&#1103;&#1084;&#1080;&#1081; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087; &#1076;&#1086; &#1074;&#1089;&#1110;&#1093; &#1110;&#1085;&#1096;&#1080;&#1093;</text>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="197.9834" x="919.92" y="163.3453">&#1074;&#1085;&#1091;&#1090;&#1088;&#1110;&#1096;&#1085;&#1110;&#1093; &#1084;&#1086;&#1076;&#1091;&#1083;&#1110;&#1074; &#1089;&#1080;&#1089;&#1090;&#1077;&#1084;&#1080;.</text>
+      </g>
+      <!--link UI to Logic-->
+      <g class="link" data-entity-1="ent0003" data-entity-2="ent0007" data-link-type="dependency" data-source-line="48" id="lnk17">
+         <path d="M416.5634,148.3 C417.0667,148.3 417.5906,148.3 418.1349,148.3 C420.312,148.3 422.8145,148.3 425.6172,148.3 C436.8281,148.3 452.8438,148.3 472.0625,148.3 C510.5,148.3 561.75,148.3 613,148.3 C715.5,148.3 818,148.3 818,148.3 C818,148.3 818,154.7306 818,164.5272 C818,169.4255 818,175.1652 818,181.3634 C818,184.4625 818,187.6762 818,190.9566 C818,191.7767 818,192.6009 818,193.4286 C818,193.8425 818,194.2572 818,194.6726 C818,194.8804 818,189.0883 818,189.2964" fill="none" id="UI-to-Logic" style="stroke:#2980B9;stroke-width:1;"/>
+         <polygon fill="#2980B9" points="818,195.2964,822,186.2964,818,190.2964,814,186.2964,818,195.2964" style="stroke:#2980B9;stroke-width:1;"/>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154.6924" x="508.59" y="144.3669">&#1042;&#1080;&#1082;&#1083;&#1080;&#1082; &#1084;&#1077;&#1090;&#1086;&#1076;&#1110;&#1074; &#1083;&#1086;&#1075;&#1110;&#1082;&#1080;</text>
+      </g>
+      <!--link UI to Utils-->
+      <g class="link" data-entity-1="ent0003" data-entity-2="ent0014" data-link-type="dependency" data-source-line="49" id="lnk18">
+         <path d="M416.3168,124.3 C416.8055,124.3 417.3144,124.3 417.843,124.3 C419.9574,124.3 422.3877,124.3 425.1097,124.3 C435.9977,124.3 451.552,124.3 470.2172,124.3 C507.5475,124.3 557.3213,124.3 607.095,124.3 C706.6425,124.3 806.19,124.3 806.19,124.3 C806.19,124.3 806.19,229.05 806.19,333.8 C806.19,359.9875 806.19,386.175 806.19,410.7258 C806.19,423.0012 806.19,434.8674 806.19,446.1198 C806.19,451.746 806.19,457.2188 806.19,462.5126 C806.19,465.1595 806.19,467.7616 806.19,470.3158 C806.19,471.5929 806.19,472.858 806.19,474.1107 C806.19,474.737 806.19,469.3603 806.19,469.9804" fill="none" id="UI-to-Utils" style="stroke:#2980B9;stroke-width:1;"/>
+         <polygon fill="#2980B9" points="806.19,475.9804,810.19,466.9804,806.19,470.9804,802.19,466.9804,806.19,475.9804" style="stroke:#2980B9;stroke-width:1;"/>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="204.3311" x="704.19" y="154.3369">&#1063;&#1080;&#1090;&#1072;&#1085;&#1085;&#1103; &#1082;&#1086;&#1085;&#1092;&#1110;&#1075;&#1110;&#1074; / &#1051;&#1086;&#1075;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103;</text>
+      </g>
+      <!--link UI to Data-->
+      <g class="link" data-entity-1="ent0003" data-entity-2="ent0010" data-link-type="dependency" data-source-line="50" id="lnk19">
+         <path d="M416.0459,136.3 C416.2123,136.3 416.3807,136.3 416.5511,136.3 C416.8919,136.3 417.2407,136.3 417.5969,136.3 C419.0221,136.3 420.5676,136.3 422.2066,136.3 C428.7625,136.3 436.8138,136.3 444.635,136.3 C460.2775,136.3 475,136.3 475,136.3 C475,136.3 475,201.655 475,269.0525 C475,285.9019 475,302.8789 475,318.9943 C475,327.0521 475,334.8944 475,342.3976 C475,344.2734 475,340.1281 475,341.9596" fill="none" id="UI-to-Data" style="stroke:#2980B9;stroke-width:1;"/>
+         <polygon fill="#2980B9" points="475,347.9596,479,338.9596,475,342.9596,471,338.9596,475,347.9596" style="stroke:#2980B9;stroke-width:1;"/>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="217.3184" x="257" y="238.1169">(&#1055;&#1086;&#1090;&#1077;&#1085;&#1094;&#1110;&#1081;&#1085;&#1072; &#1087;&#1088;&#1103;&#1084;&#1072; &#1079;&#1072;&#1083;&#1077;&#1078;&#1085;&#1110;&#1089;&#1090;&#1100;)</text>
+      </g>
+      <!--link Logic to Data-->
+      <g class="link" data-entity-1="ent0007" data-entity-2="ent0010" data-link-type="dependency" data-source-line="52" id="lnk20">
+         <path d="M818,308.9896 C818,311.1405 818,313.3277 818,315.5427 C818,324.4027 818,333.7091 818,342.9287 C818,379.8075 818,415.3 818,415.3 C818,415.3 736.2225,415.3 652.5288,415.3 C610.6819,415.3 568.3559,415.3 535.5336,415.3 C519.1224,415.3 505.0871,415.3 494.6756,415.3 C492.0727,415.3 489.6963,415.3 487.5659,415.3 C486.5007,415.3 485.497,415.3 484.5572,415.3 C484.0873,415.3 489.6334,415.3 489.1958,415.3" fill="none" id="Logic-to-Data" style="stroke:#2980B9;stroke-width:1;"/>
+         <polygon fill="#2980B9" points="483.1958,415.3,492.1958,419.3,488.1958,415.3,492.1958,411.3,483.1958,415.3" style="stroke:#2980B9;stroke-width:1;"/>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98.5093" x="624.31" y="411.3669">CRUD &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1110;&#1111;</text>
+      </g>
+      <!--link Logic to Utils-->
+      <g class="link" data-entity-1="ent0007" data-entity-2="ent0014" data-link-type="dependency" data-source-line="53" id="lnk21">
+         <path d="M826.0239,262.3 C826.0471,262.3 826.0703,262.3 826.0935,262.3 C826.1398,262.3 826.186,262.3 826.2321,262.3 C826.6007,262.3 826.9613,262.3 827.3086,262.3 C828.0033,262.3 828.645,262.3 829.1919,262.3 C830.2856,262.3 831,262.3 831,262.3 C831,262.3 831,328.1925 831,396.145 C831,413.1331 831,430.25 831,446.4982 C831,454.6224 831,462.5293 831,470.0945 C831,471.9857 831,467.8557 831,469.7023" fill="none" id="Logic-to-Utils" style="stroke:#2980B9;stroke-width:1;"/>
+         <polygon fill="#2980B9" points="831,475.7023,835,466.7023,831,470.7023,827,466.7023,831,475.7023" style="stroke:#2980B9;stroke-width:1;"/>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="121.0815" x="709" y="391.9669">&#1047;&#1072;&#1087;&#1080;&#1089; &#1087;&#1086;&#1076;&#1110;&#1081; &#1091; &#1083;&#1086;&#1075;</text>
+      </g>
+      <!--link Data to Utils-->
+      <g class="link" data-entity-1="ent0010" data-entity-2="ent0014" data-link-type="dependency" data-source-line="55" id="lnk22">
+         <path d="M483.1044,584.3 C483.3319,584.3 483.5638,584.3 483.8,584.3 C485.6904,584.3 487.8633,584.3 490.2969,584.3 C495.1641,584.3 501.0742,584.3 507.8535,584.3 C511.2432,584.3 514.8501,584.3 518.6526,584.3 C519.6032,584.3 520.5661,584.3 521.5408,584.3 C521.7845,584.3 522.0289,584.3 522.2741,584.3 C522.3966,584.3 522.5194,584.3 522.6423,584.3 C522.7038,584.3 516.7653,584.3 516.8269,584.3" fill="none" id="Data-to-Utils" style="stroke:#2980B9;stroke-width:1;"/>
+         <polygon fill="#2980B9" points="522.8269,584.3,513.8269,580.3,517.8269,584.3,513.8269,588.3,522.8269,584.3" style="stroke:#2980B9;stroke-width:1;"/>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="158.8628" x="429.87" y="580.3669">&#1051;&#1086;&#1075;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103; &#1087;&#1086;&#1084;&#1080;&#1083;&#1086;&#1082; &#1041;&#1044;</text>
+      </g>
+      <!--link Data to DB-->
+      <g class="link" data-entity-1="ent0010" data-entity-2="ent0023" data-link-type="dependency" data-source-line="62" id="lnk25">
+         <path d="M483.6347,427.3 C484.1844,427.3 484.7417,427.3 485.3066,427.3 C503.3836,427.3 529.2078,427.3 560.1969,427.3 C622.175,427.3 704.8125,427.3 787.45,427.3 C952.725,427.3 1118,427.3 1118,427.3 C1118,427.3 1118,433.8781 1118,443.8994 C1118,448.91 1118,454.7814 1118,461.1217 C1118,461.3199 1118,455.5184 1118,455.7175" fill="none" id="Data-to-DB" style="stroke:#2980B9;stroke-width:1;"/>
+         <polygon fill="#2980B9" points="1118,461.7175,1122,452.7175,1118,456.7175,1114,452.7175,1118,461.7175" style="stroke:#2980B9;stroke-width:1;"/>
+         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="170.4028" x="659.18" y="440.3669">SQL &#1079;&#1072;&#1087;&#1080;&#1090;&#1080; (&#1095;&#1077;&#1088;&#1077;&#1079; QtSql)</text>
+      </g>
+      <!--link ToDoManager (?????????? Executable) to GMN26-->
+      <g class="link" data-entity-1="ent0002" data-entity-2="ent0027" data-link-type="association" data-source-line="65" id="lnk28">
+         <path d="M887.0016,136.3 C887.0774,136.3 887.1536,136.3 887.2304,136.3 C888.4581,136.3 889.8081,136.3 891.27,136.3 C897.1175,136.3 904.755,136.3 913.52,136.3" fill="none" id="ToDoManager (&#1052;&#1086;&#1085;&#1086;&#1083;&#1110;&#1090;&#1085;&#1080;&#1081; Executable)-GMN26" style="stroke:#2980B9;stroke-width:1;stroke-dasharray:7,7;"/>
+      </g>
+      <?plantuml-src bLHDJnDH5DttLzpWGfeeAYu45YOWBanamLTS66EcCw_jX3Alphm6YJ412duaHg8IM6XYZ2PkiJfIMjh-XVV-aUVT6UYKmiAIbfdxSUwvzvxteXK_g3gXiqgkNAtAG0HgKQrN1DLMA-EvwCnRyGEXrgk2PAZACkC8PItmN1a68gHRDpEEgEnuSiqFIgJ2ciXbF6ULw4MEy9bnt9KIuzoJ5HdIexAlHEAHeIV2n7fbV7BYPc6IxTDXADS6pI-p5Qf0T4hY4lmhnOdYPD4Phb3mtDlkdK6eG7gNuWXN58ktXd7k52VS2S_YN2NzLNTrIn_g8rCtU_f4Tw-HUQkxP5xfcE3xevkwG_f8_pBxPWEXNTs0wPZCDhAETPj6RPRkuDj6o5O-nvn6bkIid7C2z1aYv4is14yMuVvpuTQKKwY8_4ZQ0__q5p2o_02vdr3tq6mZytMQQVPr1p2nsG2BM1-RJI0u4I4ymR6VntEE7ppo0wpvITyuNLFb8UEYK0fIYBAEbnSIcgb5a5eKqKDPybrkB0Qf67FwQ_dePi8aSMV8B3dHIZgESsm6h1TNdNMKGzEkQmkFwczc9za25dMObEE0J3NxNd0YCLpHybWGLHdvIeRhMIgk2-seyxwB2Iqhl-8hNrWwUo3Jm_S4M_cBlUodkq18bEM4aPnhlbez7VnGBIZpG3UkcbqehwMRf1jca-SR9ueq-pGeErC7bHu4iMk948kqfTlysymp9jHn_VhTT3LJf3_sGonO34L1x-YYGR1szMyy8ZcRcpI5t9-O_XOEG0TKTecFHSTAb9CQT8FqPqQeWqWQbSNXVKs1COwV5JByhv1uZCX3Ect3FXuXkmq_3zPieizt-VwKabOoWFSMbcU9zn7peG6eEJWNUjR30R1xw6EJU7-sSnojUjfylmfZ3sGEzPOWd62KDXVZ_A3tx0NZfJga4VqZlIwiAz7iJAgEnqfwygaD7VCAJspQMKN4JD7Y_CDa43qUUfD6SH4aMZYYURNuh9BFuT9HWaA_L5OaY_zx-u26_avsl9ZP1i-17tOuFjOjgo_hO1tQVorkjyUuCLz6JJkiKpiWskOz_h0l960-ZVvbUdfpZjaC2C9kskprrsxP8RJBwwxh7h-abSrESlczmIXsk683RtK4WXsi7GxXe_47kMrM8uvEavkBBVfOJWGUsNdz0m00?>
+   </g>
+</svg>
+
+
+
+</body>
+</html>

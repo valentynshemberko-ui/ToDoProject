@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <title>classDiagramAfterRefactor</title>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="560px" preserveAspectRatio="none" style="width:997px;height:560px;background:#FFFFFF;" version="1.1" viewBox="0 0 997 560" width="997px" zoomAndPan="magnify">
+  <defs>
+    <filter height="300%" id="f150dprj686fpp" width="300%" x="-1" y="-1">
+      <feGaussianBlur result="blurOut" stdDeviation="2"/>
+      <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+      <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/>
+      <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+    </filter>
+  </defs>
+  <g>
+    <!--class ITaskObserver-->
+    <g class="entity" data-qualified-name="ITaskObserver" data-source-line="23" id="ent0002">
+      <rect fill="#FFFFFF" filter="url(#f150dprj686fpp)" height="74.8906" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="194.752" x="791.06" y="62.74"/>
+      <ellipse cx="833.9002" cy="84.0369" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1;"/>
+      <path d="M829.8221,79.8025 L829.8221,77.6463 L837.2127,77.6463 L837.2127,79.8025 L834.744,79.8025 L834.744,87.8806 L837.2127,87.8806 L837.2127,90.0369 L829.8221,90.0369 L829.8221,87.8806 L832.2909,87.8806 L832.2909,79.8025 L829.8221,79.8025 Z " fill="#000000"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="100.8848" x="854.087" y="80.7351">ITaskObserver</text>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="79.8096" x="864.6246" y="97.032">«Interface»</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="792.06" x2="984.812" y1="105.3338" y2="105.3338"/>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="792.06" x2="984.812" y1="113.3338" y2="113.3338"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="182.752" x="797.06" y="130.3289">+onTasksUpdated() : void</text>
+    </g>
+    <!--class TM-->
+    <g class="entity" data-qualified-name="TM" data-source-line="28" id="ent0003">
+      <rect fill="#FFFFFF" filter="url(#f150dprj686fpp)" height="186.375" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="378.8643" x="7" y="7"/>
+      <ellipse cx="145.2329" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1;"/>
+      <path d="M148.2017,28.6406 Q147.6235,28.9375 146.9829,29.0781 Q146.3423,29.2344 145.6392,29.2344 Q143.1392,29.2344 141.811,27.5938 Q140.4985,25.9375 140.4985,22.8125 Q140.4985,19.6875 141.811,18.0313 Q143.1392,16.375 145.6392,16.375 Q146.3423,16.375 146.9829,16.5313 Q147.6392,16.6875 148.2017,16.9844 L148.2017,19.7031 Q147.5767,19.125 146.9829,18.8594 Q146.3892,18.5781 145.7642,18.5781 Q144.4204,18.5781 143.7329,19.6563 Q143.0454,20.7188 143.0454,22.8125 Q143.0454,24.9063 143.7329,25.9844 Q144.4204,27.0469 145.7642,27.0469 Q146.3892,27.0469 146.9829,26.7813 Q147.5767,26.5 148.2017,25.9219 L148.2017,28.6406 Z " fill="#000000"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93.8984" x="165.7329" y="27.8467">TaskManager</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="8" x2="384.8643" y1="39" y2="39"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="294.5879" x="13" y="55.9951">-observers : std::vector&lt;ITaskObserver*&gt;</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204.374" x="13" y="72.292">-repository : TaskRepository*</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="8" x2="384.8643" y1="79.5938" y2="79.5938"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="339.7461" x="13" y="96.5889">+addObserver(observer : ITaskObserver*) : void</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="366.8643" x="13" y="112.8857">+removeObserver(observer : ITaskObserver*) : void</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170.7686" x="13" y="129.1826">-notifyObservers() : void</text>
+      <line style="stroke:#2980B9;stroke-width:1;stroke-dasharray:1,2;" x1="8" x2="384.8643" y1="136.4844" y2="136.4844"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="200.6826" x="13" y="153.4795">+addTask(task : Task) : bool</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223.6582" x="13" y="169.7764">+updateTask(task : Task) : bool</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217.1709" x="13" y="186.0732">+deleteTask(taskId : int) : bool</text>
+    </g>
+    <!--class MW-->
+    <g class="entity" data-qualified-name="MW" data-source-line="42" id="ent0004">
+      <rect fill="#FFFFFF" filter="url(#f150dprj686fpp)" height="129.4844" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="304.9404" x="389.96" y="263.37"/>
+      <ellipse cx="493.7159" cy="279.37" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1;"/>
+      <path d="M496.6846,285.0106 Q496.1065,285.3075 495.4659,285.4481 Q494.8252,285.6044 494.1221,285.6044 Q491.6221,285.6044 490.294,283.9638 Q488.9815,282.3075 488.9815,279.1825 Q488.9815,276.0575 490.294,274.4013 Q491.6221,272.745 494.1221,272.745 Q494.8252,272.745 495.4659,272.9013 Q496.1221,273.0575 496.6846,273.3544 L496.6846,276.0731 Q496.0596,275.495 495.4659,275.2294 Q494.8721,274.9481 494.2471,274.9481 Q492.9034,274.9481 492.2159,276.0263 Q491.5284,277.0888 491.5284,279.1825 Q491.5284,281.2763 492.2159,282.3544 Q492.9034,283.4169 494.2471,283.4169 Q494.8721,283.4169 495.4659,283.1513 Q496.0596,282.87 496.6846,282.2919 L496.6846,285.0106 Z " fill="#000000"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88.9287" x="514.2159" y="284.2167">MainWindow</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="390.96" x2="693.9004" y1="295.37" y2="295.37"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="214.3203" x="395.96" y="312.3651">-taskManager : TaskManager&amp;</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150.9307" x="395.96" y="328.662">-ui : Ui::MainWindow*</text>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="390.96" x2="693.9004" y1="335.9638" y2="335.9638"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292.9404" x="395.96" y="352.9589">+MainWindow(manager : TaskManager&amp;)</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182.752" x="395.96" y="369.2557">+onTasksUpdated() : void</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128.9668" x="395.96" y="385.5526">-loadTasks() : void</text>
+    </g>
+    <g class="entity" data-qualified-name="GMN8" data-source-line="59" id="ent0009">
+      <path d="M455.71,62.35 L455.71,96.52 L386.12,100.52 L455.71,104.52 L455.71,138.0141 A5,5 0 0 0 460.71,143.0141 L716.1519,143.0141 A5,5 0 0 0 721.1519,138.0141 L721.1519,67.35 L711.1519,57.35 L460.71,57.35 A5,5 0 0 0 455.71,62.35" fill="#FEFFDD" filter="url(#f150dprj686fpp)" style="stroke:#181818;stroke-width:0.5;"/>
+      <path d="M711.1519,57.35 L711.1519,64.85 A2.5,2.5 0 0 0 713.6519,67.35 L721.1519,67.35 L711.1519,57.35" fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="149.9126" x="461.71" y="74.4169">Видавець (Subject):</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="240.3096" x="461.71" y="89.5497">Коли дані змінюються (наприклад,</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="223.5835" x="461.71" y="104.6825">успішний addTask), TaskManager</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="185.6626" x="461.71" y="119.8153">викликає notifyObservers().</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="242.6455" x="461.71" y="134.9481">Він нічого не знає про MainWindow.</text>
+    </g>
+    <g class="entity" data-qualified-name="GMN11" data-source-line="67" id="ent0012">
+      <path d="M385.44,467.86 L385.44,543.5241 A5,5 0 0 0 390.44,548.5241 L694.4288,548.5241 A5,5 0 0 0 699.4288,543.5241 L699.4288,472.86 L689.4288,462.86 L546.43,462.86 L542.43,393.23 L538.43,462.86 L390.44,462.86 A5,5 0 0 0 385.44,467.86" fill="#FEFFDD" filter="url(#f150dprj686fpp)" style="stroke:#181818;stroke-width:0.5;"/>
+      <path d="M689.4288,462.86 L689.4288,470.36 A2.5,2.5 0 0 0 691.9288,472.86 L699.4288,472.86 L689.4288,462.86" fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="189.7061" x="391.44" y="479.9269">Конкретний Спостерігач:</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="288.8564" x="391.44" y="495.0597">MainWindow підписується на TaskManager</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="273.2285" x="391.44" y="510.1925">у конструкторі. Коли приходить сигнал</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199.5449" x="391.44" y="525.3253">onTasksUpdated(), вікно саме</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="231.7847" x="391.44" y="540.4581">перемальовує списки (loadTasks).</text>
+    </g>
+    <!--reverse link ITaskObserver to MW-->
+    <g class="link" data-entity-1="ent0002" data-entity-2="ent0004" data-link-type="extension" data-source-line="52" id="lnk5">
+      <path codeLine="52" d="M920.89,155.89 C920.89,220.74 920.89,328.52 920.89,328.52 C920.89,328.52 800.31,328.52 695.27,328.52" fill="none" id="ITaskObserver-backto-MW" style="stroke:#2C3E50;stroke-width:1;stroke-dasharray:7,7;"/>
+      <polygon fill="none" points="920.89,137.89,914.89,155.89,926.89,155.89,920.89,137.89" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92.8154" x="797.5272" y="294.5869">«implements»</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117.0698" x="785.4" y="309.7197">Реалізує реакцію</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57.8779" x="814.9959" y="324.8525">на зміни</text>
+    </g>
+    <!--link TM to ITaskObserver-->
+    <g class="link" data-entity-1="ent0003" data-entity-2="ent0002" data-link-type="aggregation" data-source-line="53" id="lnk6">
+      <path codeLine="53" d="M398.31,160.52 C593.16,160.52 855.97,160.52 855.97,160.52 C855.97,160.52 855.97,156.18 855.97,144.05" fill="none" id="TM-ITaskObserver" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="none" points="386.31,160.52,392.31,164.52,398.31,160.52,392.31,156.52,386.31,160.52" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="855.97,138.05,851.97,147.05,855.97,143.05,859.97,147.05,855.97,138.05" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63.7686" x="506.3522" y="173.5869">«notifies»</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="187.7129" x="444.38" y="188.7197">Викликає onTasksUpdated()</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123.3413" x="476.5658" y="203.8525">у всіх підписників</text>
+    </g>
+    <!--link MW to TM-->
+    <g class="link" data-entity-1="ent0004" data-entity-2="ent0003" data-link-type="dependency" data-source-line="56" id="lnk7">
+      <path codeLine="56" d="M422.84,262.94 C422.84,222.24 422.84,177.52 422.84,177.52 C422.84,177.52 414.13,177.52 392.21,177.52" fill="none" id="MW-to-TM" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="386.21,177.52,395.21,181.52,391.21,177.52,395.21,173.52,386.21,177.52" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45.6904" x="315.7807" y="214.9769">«uses»</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="167.5718" x="254.84" y="230.1097">Викликає CRUD операції</text>
+    </g>
+    <?plantuml-src bLNHQXj757tVhnWSQ2JL4cvBcbW8GUfIq8Ce915-COILTcHlBSs8sP63aneiEudp4198YmDzQlzWSQHQKIFv5sR-g6TcHwkLQgUjXONstZFtddlFlRFHViXwll2xfDNne-Y-b29izYMjjJXx63wbPCEBKeZWVHQqk61KaA-oZcZF3_YJaEqIAVequ-Y4ZCh37YLSo3sUSJ0Uq8ZsoDsb-3xRTqRlDb6_gPdwIxzMCtsCNnSg9kfAnJ2TwnEOuin9IvuyymZ-llDR-xkMwXRlS46szq994myN0HM9zTRNc_SscflMVby8_cHkRdr3xsnOym-SoMNhaPV96J99HTjlqHlotchVQs-s_Miot_Nfjvz9WT9Vgga-KIDzh9-haVge1qJzWU9dUk3Cv-g3YlKPUf9JKzCKmFvKOpJcDL53DIDRND2yj-2uLdlaH_i_DYCg3gZOOPLARUwhLjU87v4bWAlfI_BCRqPI-2rvH3WpYAZH2tn9WroUbCa13mD7-PqQ8t4CdKRw9LZa7lQRFz6Mp9CYKRyOAQs8Ky0-4lK9VAVu7u8rwlby5OcwQoPxtMV-BXMMyAEwOraatD6Em2cIGRbyWCnSL9PgAbGTMj0UZqBu3m4tY0UfeM0XZn-xwlqWc9_EpNFWp7BOj1796K6x_83-psD5R8GCsuTpRvHRSfTA2q8cI4xYov4tm2Rd7OVeMtd-1HJG3is0QW7Sc9KKTPGku5HDi6iZZ9rJxjevj1gRdTJFiPrdHbgYBk2TuEVi9dKRjLJRkX-oxP3X5h7IrhTJQUL2TLUBU_h20VeXx8smN5x4M55nuSXrhusKTy2R9Zn9rE6-RNwqElhlrSLj_LPTejgnlQEIvc27JybSK6zvlIe_bqgcoZAfLC9khqExbCceMjrXwdUqoTvowbAVwb-9QJyC4spLkNu3mDJSX9Vg4n3GnCCQy69rPNrDN3jH8KsYclMSG0Bp7IFgQgax36GXsG19Ng0811-YbB4UME4dUBvmnSwLd08wi6esQedQGsAt_8CLVkoXlYAOWQ2XquzkeBBreF4zmR4hsxJOrldUyq2V4X7kxad2smW25Gg5cw-PSi6edhmqZ0m618Pff_GRV40MbD-wWRn2keHAh8Rh1CVHy86fNRzou-xsBR-UdHU3187bAlwnloKBUsTo4zkhCzCQZ7so7PU60ivP5hFCZ9OyoW8JZheUDBcKl6kQKDzEcl3V5pFfoYBuah9clDAMsB5QATACnCJaiZeVwrFaF37lOtrUohJQzb6_mEFGhJUwE0O1k_KcqEgqhMTl1u1ZyqAm_Kg6O8JdE7dv0sYtOE2cqUnOBbt5_A9RVmC0?>
+  </g>
+</svg>
+
+
+</body>
+</html>

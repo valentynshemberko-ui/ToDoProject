@@ -1,0 +1,110 @@
+name: Deploy Documentation and UML to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy-docs:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Doxygen & Graphviz
+        run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
+
+      - name: Generate Doxygen documentation
+        run: doxygen Doxyfile
+
+      - name: Prepare Deployment Folder (public)
+        run: |
+          mkdir -p public/doxygen
+          mkdir -p public/uml
+          mkdir -p public/metrics
+          
+          cp metrics/*.txt public/metrics/
+          cp -r docs/html/* public/doxygen/
+          cp -r uml/* public/uml/
+
+      - name: Create Main Index HTML
+        run: |
+          cat << 'EOF' > public/index.html
+          <!DOCTYPE html>
+          <html lang="uk">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Документація ToDo Manager</title>
+              <style>
+                  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+                  h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
+                  ul { list-style-type: none; padding: 0; }
+                  li { margin: 12px 0; }
+                  a { text-decoration: none; color: #0056b3; font-size: 18px; font-weight: bold; }
+                  a:hover { text-decoration: underline; color: #003d82; }
+                  .container { max-width: 800px; margin: auto; background: #f9f9f9; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <h1>Документація проєкту ToDo</h1>
+                  <p>Оберіть розділ для перегляду:</p>
+          
+                  <h2>Код (Doxygen)</h2>
+                  <ul>
+                      <li> <a href="doxygen/index.html">Doxygen Документація (Класи та Функції)</a></li>
+                  </ul>
+
+                  <h2>UML Діаграми</h2>
+                  <ul>
+                      <li> <a href="uml/classDiagram.html">Діаграма класів (Class Diagram)</a></li>
+                      <li> <a href="uml/componentDiagram.html">Діаграма компонентів (Component Diagram)</a></li>
+                      <li> <a href="uml/UseCaseDiagram.html">Діаграма прецедентів (Use Case Diagram)</a></li>
+                      <li> <a href="uml/SequenceDiagram.html">Діаграма послідовностей (Sequence Diagram)</a></li>
+                      <li> <a href="uml/activityDiagram.html">Діаграма активностей (Activity Diagram)</a></li>
+                      <li> <a href="uml/StateDiagram.html">Діаграма станів (State Diagram)</a></li>
+                      <li> <a href="uml/CommunicationDiagram.html">Діаграма комунікації (Communication Diagram)</a></li>
+                      <li> <a href="uml/CompositeStructureDiagram.html">Діаграма композитної структури (Composite Structure Diagram)</a></li>
+                      <li> <a href="uml/DeploymentDiagram.html">Діаграма розгортання (Deployment Diagram)</a></li>
+                      <li> <a href="uml/InteractionOverviewDiagram.html">Діаграма огляду взаємодії (Interaction Overview Diagram)</a></li>
+                      <li> <a href="uml/PackageDiagram.html">Діаграма пакетів (Package Diagram)</a></li>
+                      <li> <a href="uml/objectDiagram.html">Діаграма об'єктів (Object Diagram)</a></li>
+                      <li> <a href="uml/timingDiagram.html">Часова діаграма (Timing Diagram)</a></li>
+                  </ul>
+          
+                  <h2>Аналіз коду та Метрики (Лабораторна робота)</h2>
+                  <ul>
+                      <li> <a href="metrics/cloc.txt">Cloc: Об'єм коду</a></li>
+                      <li> <a href="metrics/lizard.txt">Lizard: Складність коду</a></li>
+                  </ul>
+              </div>
+          </body>
+          </html>
+          EOF
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './public'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

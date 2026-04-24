@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <title>CompositeStructureDiagram</title>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="213px" preserveAspectRatio="none" style="width:1279px;height:213px;background:#FFFFFF;" version="1.1" viewBox="0 0 1279 213" width="1279px" zoomAndPan="magnify">
+  <defs>
+    <filter height="300%" id="f1q977bsch23b2" width="300%" x="-1" y="-1">
+      <feGaussianBlur result="blurOut" stdDeviation="2"/>
+      <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+      <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/>
+      <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+    </filter>
+  </defs>
+  <g>
+    <!--cluster MW-->
+    <g class="cluster" data-qualified-name="MW" data-source-line="37" id="ent0004">
+      <rect fill="#F8F9FA" filter="url(#f1q977bsch23b2)" height="161" rx="5" ry="5" style="stroke:#34495E;stroke-width:2;" width="1022.07" x="245.2422" y="24.0986"/>
+      <rect fill="#F8F9FA" height="10" style="stroke:#34495E;stroke-width:2;" width="15" x="1247.3122" y="29.0986"/>
+      <rect fill="#F8F9FA" height="2" style="stroke:#34495E;stroke-width:2;" width="4" x="1245.3122" y="31.0986"/>
+      <rect fill="#F8F9FA" height="2" style="stroke:#34495E;stroke-width:2;" width="4" x="1245.3122" y="35.0986"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="233.2422" x="639.6561" y="50.0938">MainWindow (Класифікатор)</text>
+    </g>
+    <g class="entity" data-qualified-name="MW.p_ui" data-source-line="40" id="ent0005">
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49.6289" x="220.4277" y="170.0938">UI_Port</text>
+      <rect fill="#F1F1F1" height="12" style="stroke:#181818;stroke-width:1.5;" width="12" x="239.2422" y="145.0986"/>
+    </g>
+    <g class="entity" data-qualified-name="MW.p_db" data-source-line="41" id="ent0006">
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55.6377" x="217.4233" y="20.7969">DB_Port</text>
+      <rect fill="#F1F1F1" height="12" style="stroke:#181818;stroke-width:1.5;" width="12" x="239.2422" y="36.0986"/>
+    </g>
+    <!--entity ui-->
+    <g class="entity" data-qualified-name="MW.ui" data-source-line="44" id="ent0007">
+      <rect fill="#FFFFFF" filter="url(#f1q977bsch23b2)" height="36.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="158.8789" x="438.3022" y="132.9486"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="138.8789" x="448.3022" y="155.9438">ui : Ui::MainWindow</text>
+    </g>
+    <!--entity tm-->
+    <g class="entity" data-qualified-name="MW.tm" data-source-line="45" id="ent0008">
+      <rect fill="#FFFFFF" filter="url(#f1q977bsch23b2)" height="36.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="218.3516" x="703.5522" y="132.9486"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="198.3516" x="713.5522" y="155.9438">taskManager : TaskManager</text>
+    </g>
+    <!--entity am-->
+    <g class="entity" data-qualified-name="MW.am" data-source-line="46" id="ent0009">
+      <rect fill="#FFFFFF" filter="url(#f1q977bsch23b2)" height="36.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="220.9766" x="702.2422" y="61.9486"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="200.9766" x="712.2422" y="84.9438">authManager : AuthManager</text>
+    </g>
+    <!--entity widgets-->
+    <g class="entity" data-qualified-name="MW.widgets" data-source-line="47" id="ent0010">
+      <rect fill="#FFFFFF" filter="url(#f1q977bsch23b2)" height="36.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="268.0898" x="983.2222" y="132.9486"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="248.0898" x="993.2222" y="155.9438">widgets : QList&lt;TaskItemWidget*&gt;</text>
+    </g>
+    <!--entity OS_Events-->
+    <g class="entity" data-qualified-name="OS_Events" data-source-line="33" id="ent0002">
+      <ellipse cx="78.2422" cy="159.0986" fill="#2ECC71" filter="url(#f1q977bsch23b2)" rx="8" ry="8" style="stroke:#27AE60;stroke-width:0.5;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61.7969" x="6" y="189.0938">Події ОС</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144.4844" x="6" y="205.3906">(Миша, Клавіатура)</text>
+    </g>
+    <!--entity DB_Conn-->
+    <g class="entity" data-qualified-name="DB_Conn" data-source-line="34" id="ent0003">
+      <ellipse cx="78.2422" cy="34.0986" fill="#2ECC71" filter="url(#f1q977bsch23b2)" rx="8" ry="8" style="stroke:#27AE60;stroke-width:0.5;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111.5352" x="22.4746" y="64.0938">З'єднання з БД</text>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56.6221" x="22.4746" y="80.3906">(SQLite)</text>
+    </g>
+    <!--reverse link ui to p_ui-->
+    <g class="link" data-entity-1="ent0007" data-entity-2="ent0005" data-link-type="dependency" data-source-line="50" id="lnk12">
+      <path d="M431.8222,151.0986 C362.4122,151.0986 275.3222,151.0986 251.1622,151.0986" fill="none" id="ui-backto-p_ui" style="stroke:#181818;stroke-width:1;"/>
+      <polygon fill="#181818" points="437.8222,151.0986,428.8222,147.0986,432.8222,151.0986,428.8222,155.0986,437.8222,151.0986" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77.0415" x="345.4922" y="164.1655">Сигнали Qt</text>
+    </g>
+    <!--link ui to tm-->
+    <g class="link" data-entity-1="ent0007" data-entity-2="ent0008" data-link-type="dependency" data-source-line="52" id="lnk13">
+      <path d="M597.5722,160.1686 C630.0722,160.1686 662.1822,160.1686 697.2122,160.1686" fill="none" id="ui-to-tm" style="stroke:#181818;stroke-width:1;"/>
+      <polygon fill="#181818" points="703.2122,160.1686,694.2122,156.1686,698.2122,160.1686,694.2122,164.1686,703.2122,160.1686" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81.9419" x="568.3922" y="173.2355">onAddTask()</text>
+    </g>
+    <!--link ui to am-->
+    <g class="link" data-entity-1="ent0007" data-entity-2="ent0009" data-link-type="dependency" data-source-line="53" id="lnk14">
+      <path d="M597.6122,142.0286 C639.5422,142.0286 682.3122,142.0286 682.3122,142.0286 C682.3122,142.0286 682.3122,88.0986 682.3122,88.0986 C682.3122,88.0986 684.0822,88.0986 695.8322,88.0986" fill="none" id="ui-to-am" style="stroke:#181818;stroke-width:1;"/>
+      <polygon fill="#181818" points="701.8322,88.0986,692.8322,84.0986,696.8322,88.0986,692.8322,92.0986,701.8322,88.0986" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51.251" x="624.6922" y="155.0955">logout()</text>
+    </g>
+    <!--link tm to widgets-->
+    <g class="link" data-entity-1="ent0008" data-entity-2="ent0010" data-link-type="dependency" data-source-line="55" id="lnk15">
+      <path d="M922.2422,145.0486 C941.9422,145.0486 956.6722,145.0486 976.9722,145.0486" fill="none" id="tm-to-widgets" style="stroke:#181818;stroke-width:1;"/>
+      <polygon fill="#181818" points="982.9722,145.0486,973.9722,141.0486,977.9722,145.0486,973.9722,149.0486,982.9722,145.0486" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118.7202" x="833.6122" y="141.1155">Створює віджети</text>
+    </g>
+    <!--link widgets to tm-->
+    <g class="link" data-entity-1="ent0010" data-entity-2="ent0008" data-link-type="dependency" data-source-line="56" id="lnk16">
+      <path d="M982.8022,157.1486 C962.5722,157.1486 947.9122,157.1486 928.2822,157.1486" fill="none" id="widgets-to-tm" style="stroke:#181818;stroke-width:1;stroke-dasharray:7,7;"/>
+      <polygon fill="#181818" points="922.2822,157.1486,931.2822,161.1486,927.2822,157.1486,931.2822,153.1486,922.2822,157.1486" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="108.126" x="843.5422" y="170.2155">Зміна чекбоксів</text>
+    </g>
+    <!--link tm to p_db-->
+    <g class="link" data-entity-1="ent0008" data-entity-2="ent0006" data-link-type="dependency" data-source-line="58" id="lnk17">
+      <path d="M703.4122,151.0986 C680.0822,151.0986 662.3122,151.0986 662.3122,151.0986 C662.3122,151.0986 662.3122,42.0986 662.3122,42.0986 C662.3122,42.0986 307.8322,42.0986 257.1422,42.0986" fill="none" id="tm-to-p_db" style="stroke:#181818;stroke-width:1;"/>
+      <polygon fill="#181818" points="251.1422,42.0986,260.1422,46.0986,256.1422,42.0986,260.1422,38.0986,251.1422,42.0986" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81.2817" x="449.7722" y="55.1655">CRUD задач</text>
+    </g>
+    <!--link am to p_db-->
+    <g class="link" data-entity-1="ent0009" data-entity-2="ent0006" data-link-type="dependency" data-source-line="59" id="lnk18">
+      <path d="M702.0722,70.2786 C540.5622,70.2786 259.3122,70.2786 259.3122,70.2786 C259.3122,70.2786 259.3122,49.8286 259.3122,48.1786" fill="none" id="am-to-p_db" style="stroke:#181818;stroke-width:1;"/>
+      <polygon fill="#181818" points="259.3122,42.1786,255.3122,51.1786,259.3122,47.1786,263.3122,51.1786,259.3122,42.1786" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81.8594" x="467.6422" y="74.8455">Сесія юзера</text>
+    </g>
+    <!--link OS_Events to p_ui-->
+    <g class="link" data-entity-1="ent0002" data-entity-2="ent0005" data-link-type="dependency" data-source-line="63" id="lnk19">
+      <path d="M87.2222,151.0986 C117.4322,151.0986 208.9222,151.0986 233.5522,151.0986" fill="none" id="OS_Events-to-p_ui" style="stroke:#181818;stroke-width:1;"/>
+      <polygon fill="#181818" points="239.5522,151.0986,230.5522,147.0986,234.5522,151.0986,230.5522,155.0986,239.5522,151.0986" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37.4512" x="164.3822" y="164.1655">Кліки</text>
+    </g>
+    <!--reverse link DB_Conn to p_db-->
+    <g class="link" data-entity-1="ent0003" data-entity-2="ent0006" data-link-type="dependency" data-source-line="64" id="lnk21">
+      <path d="M93.2222,42.0986 C123.4322,42.0986 214.9222,42.0986 239.5522,42.0986" fill="none" id="DB_Conn-backto-p_db" style="stroke:#181818;stroke-width:1;"/>
+      <polygon fill="#181818" points="87.2222,42.0986,96.2222,46.0986,92.2222,42.0986,96.2222,38.0986,87.2222,42.0986" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78.2666" x="164.3822" y="55.1655">SQL-запити</text>
+    </g>
+    <?plantuml-src XLNTJXD15BxVfvZK2y28Oa6nX90WQc8YKKJ2ZGaPjjDsGplJxCvAZ351qC2LH4CWCVw4DwWLB4ABhp3pHdvdkdItASIzcEwUl-_yV6TQ5INDj69XKAveLWn2uUj0IIzQ2sITXxp6V5MhAocaNjIlguB5jMe-ewq6KkZNTS5Kg2igemXLB8k-2gK8sUsnZ2AgyA9Q3sIPwJ0MdZV4p3VJC6UcONVifjqoJNnrJCVkCdDgDo1-PquWFBS7pFmbIxiFkmrpSbcIx8t7yDpd_bhPfJ2dgYfarqhtIeKIx-fKM1HX8X-Vc2ZS4HdvYqhWhqaHHIplf8-Kr8bjtXyNTyQyjrwsJFIBop8QSnMmUmQ1yuLxOwi59vyDGxK-AFuFSXqTlmfKJ4xuu_uWg3ysNiYlziS9f1PXYVjNLf0NlZzv-v8A9hcuwvB220_CEMRKmMXsw6JsdTsocvZZETus8J176DmkmzpEJGjJRjlztfGXwi3u6FCcuoqlpIbdVa1xXBYO_dTp-58Ecw_c12YD6yny8TgO9a8ro8_OCf9ZF69F5rSUlW8TehvG1qDs3tbqKeArcFbazX1qSU59e4NN-S7zbJabvGKrxGuplv34MRT4aF4FoaFMX7sK2BgVH5Nx7kcSKaAeVSDBcPcRvu5S3YJOpuQxgG_QTpEONqw6uGwayODqi3XXb3qpRJJhDtm-N0bi6ixNiIItz7Zb6LvSxFfA76HKA3QZAgxsmNv6bxPesNfpfI6P5iusTX43fJramyzugACHvvKkH6uwdea3DiMMWgcfjFRfM_6CGqlIw7VGF5gRvvANSMrCiHVfLyzDrovnux6kf6wpwLVFZL_cjXuKoq97SC7u8prDU8-rg2qx-VMPddTY-B_cj4npoExYvvIwGYG2d0gJrb3dsMWLD-xe37ETCOSWpoz7o3DuBEWKW4nXfcimKtAsMAJSXaUoEawwgYghM2SATy25j6bjvX2KQ3e6VRHxpEtB4UXpJ8HoBXUsDnD0h7DtFnlCRhkH_mJvQJltJNC0YMW3fxddIm-e1RGK3RljB7YV1SezfXXq3tma5ZcQNbmWcTO1faMX-kuKqwQrQzBj3qNRw-ru0j7jw1VwVw0WdWCTZUjG9XiDFVPyrENu5mk3yly1?>
+  </g>
+</svg>
+
+
+</body>
+</html>

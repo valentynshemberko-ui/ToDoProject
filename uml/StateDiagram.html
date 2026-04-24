@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <title>StateDiagram</title>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="STATE" height="717px" preserveAspectRatio="none" style="width:1077px;height:717px;background:#FFFFFF;" version="1.1" viewBox="0 0 1077 717" width="1077px" zoomAndPan="magnify">
+  <defs>
+    <filter height="300%" id="fkl3ma75rnzhm" width="300%" x="-1" y="-1">
+      <feGaussianBlur result="blurOut" stdDeviation="2"/>
+      <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+      <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/>
+      <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+    </filter>
+  </defs>
+  <g>
+    <g class="entity" data-qualified-name="Draft" id="ent0002">
+      <rect fill="#F8F9FA" filter="url(#fkl3ma75rnzhm)" height="50" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="140.9619" x="600.52" y="16.5659"/>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="600.52" x2="741.4819" y1="42.8628" y2="42.8628"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120.9619" x="610.52" y="34.561">Чернетка (Draft)</text>
+    </g>
+    <g class="entity" data-qualified-name="Active" id="ent0003">
+      <rect fill="#F8F9FA" filter="url(#fkl3ma75rnzhm)" height="50" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="140.1963" x="214.9" y="153.8359"/>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="214.9" x2="355.0963" y1="180.1328" y2="180.1328"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120.1963" x="224.9" y="171.831">Активна (Active)</text>
+    </g>
+    <rect fill="none" filter="url(#fkl3ma75rnzhm)" height="104.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="182.9209" x="360.54" y="502.3959"/>
+    <path d="M365.54,502.3959 L538.4609,502.3959 A5,5 0 0 1 543.4609,507.3959 L543.4609,528.6928 L360.54,528.6928 L360.54,507.3959 A5,5 0 0 1 365.54,502.3959" fill="#F8F9FA"/>
+    <rect fill="none" height="104.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="182.9209" x="360.54" y="502.3959"/>
+    <line style="stroke:#2980B9;stroke-width:0.5;" x1="360.54" x2="543.4609" y1="528.6928" y2="528.6928"/>
+    <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162.9209" x="370.54" y="520.391">Виконана (Completed)</text>
+    <g class="entity" data-qualified-name="Completed.OnTime" id="ent0005">
+      <rect fill="#F8F9FA" filter="url(#fkl3ma75rnzhm)" height="50" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="143.4502" x="372.54" y="540.6928"/>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="372.54" x2="515.9902" y1="566.9897" y2="566.9897"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123.4502" x="382.54" y="558.6879">Успішно закрита</text>
+    </g>
+    <rect fill="none" filter="url(#fkl3ma75rnzhm)" height="104.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="191.3223" x="93.34" y="306.1059"/>
+    <path d="M98.34,306.1059 L279.6623,306.1059 A5,5 0 0 1 284.6623,311.1059 L284.6623,332.4028 L93.34,332.4028 L93.34,311.1059 A5,5 0 0 1 98.34,306.1059" fill="#F8F9FA"/>
+    <rect fill="none" height="104.2969" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="191.3223" x="93.34" y="306.1059"/>
+    <line style="stroke:#2980B9;stroke-width:0.5;" x1="93.34" x2="284.6623" y1="332.4028" y2="332.4028"/>
+    <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171.3223" x="103.34" y="324.101">Прострочена (Overdue)</text>
+    <g class="entity" data-qualified-name="Overdue.Attention" id="ent0007">
+      <rect fill="#F8F9FA" filter="url(#fkl3ma75rnzhm)" height="50" rx="5" ry="5" style="stroke:#2980B9;stroke-width:0.5;" width="135.3701" x="105.34" y="344.4028"/>
+      <line style="stroke:#2980B9;stroke-width:0.5;" x1="105.34" x2="240.7101" y1="370.6997" y2="370.6997"/>
+      <text fill="#2C3E50" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115.3701" x="115.34" y="362.3979">Потребує уваги</text>
+    </g>
+    <g class="start_entity" data-qualified-name=".start." data-source-line="28" id="ent0002">
+      <ellipse cx="440" cy="41.5659" fill="#222222" filter="url(#fkl3ma75rnzhm)" rx="10" ry="10" style="stroke:#222222;stroke-width:1;"/>
+    </g>
+    <g class="end_entity" data-qualified-name=".end." data-source-line="32" id="ent0005">
+      <ellipse cx="306" cy="694.6959" fill="none" filter="url(#fkl3ma75rnzhm)" rx="11" ry="11" style="stroke:#222222;stroke-width:1;"/>
+      <ellipse cx="306" cy="694.6959" fill="#222222" rx="6" ry="6" style="stroke:#222222;stroke-width:1;"/>
+    </g>
+    <g class="entity" data-qualified-name="GMN2" data-source-line="51" id="ent0003">
+      <path d="M564.38,148.5659 L564.38,209.0972 A5,5 0 0 0 569.38,214.0972 L800.6119,214.0972 A5,5 0 0 0 805.6119,209.0972 L805.6119,153.5659 L795.6119,143.5659 L569.38,143.5659 A5,5 0 0 0 564.38,148.5659" fill="#FEFFDD" filter="url(#fkl3ma75rnzhm)" style="stroke:#181818;stroke-width:0.5;"/>
+      <path d="M795.6119,143.5659 L795.6119,151.0659 A2.5,2.5 0 0 0 798.1119,153.5659 L805.6119,153.5659 L795.6119,143.5659" fill="#FEFFDD" style="stroke:#181818;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="171.4502" x="570.38" y="160.6328">У стані "Активна" задача</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="205.0229" x="570.38" y="175.7656">відображається у загальному</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="216.0996" x="570.38" y="190.8984">списку і очікує дій користувача</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="201.8174" x="570.38" y="206.0313">або настання часу дедлайну.</text>
+    </g>
+    <!--link *start* to Draft-->
+    <g class="link" data-entity-1="ent0002" data-entity-2="ent0002" data-link-type="dependency" data-source-line="28" id="lnk3">
+      <path d="M450.22,41.5659 C476.07,41.5659 539.82,41.5659 594.07,41.5659" fill="none" id="*start*-to-Draft" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="600.07,41.5659,591.07,37.5659,595.07,41.5659,591.07,45.5659,600.07,41.5659" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81.5483" x="484.6782" y="19.6328">Натискання</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="114.3848" x="468.26" y="34.7656">"Додати задачу"</text>
+    </g>
+    <!--link Draft to Active-->
+    <g class="link" data-entity-1="ent0002" data-entity-2="ent0003" data-link-type="dependency" data-source-line="31" id="lnk4">
+      <path d="M601.1,67.0659 C531.25,91.5459 430.1525,126.9719 360.3725,151.4219" fill="none" id="Draft-to-Active" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="354.71,153.4059,364.5264,154.2048,359.4287,151.7525,361.881,146.6549,354.71,153.4059" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="196.168" x="513" y="109.6328">Збереження валідних даних</text>
+    </g>
+    <!--link Draft to *end*-->
+    <g class="link" data-entity-1="ent0002" data-entity-2="ent0005" data-link-type="dependency" data-source-line="32" id="lnk6">
+      <path d="M707.79,67.0159 C752.78,96.9159 823,143.5659 823,143.5659 C823,143.5659 870,177.8359 870,177.8359 C870,177.8359 870,177.8359 870,555.5459 C870,555.5459 540,653.6959 540,653.6959 C540,653.6959 369.1544,682.9061 322.8844,690.8061" fill="none" id="Draft-to-*end*" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="316.97,691.8159,326.5148,694.2441,321.8987,690.9744,325.1684,686.3583,316.97,691.8159" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="198.0024" x="871" y="362.8128">Скасування (Закриття вікна)</text>
+    </g>
+    <!--link Active to Completed-->
+    <g class="link" data-entity-1="ent0003" data-entity-2="ent0004" data-link-type="dependency" data-source-line="35" id="lnk7">
+      <path d="M347.47,204.3159 C393.82,222.4759 449,244.1059 449,244.1059 C449,244.1059 589,306.1059 589,306.1059 C589,306.1059 589,410.3959 589,410.3959 C589,410.3959 544.5282,456.8609 505.2182,497.9409" fill="none" id="Active-to-Completed" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="501.07,502.2759,510.1823,498.5389,504.5269,498.6634,504.4023,493.0079,501.07,502.2759" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115.9146" x="606.0088" y="355.3128">Клік по чекбоксу</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="147.9321" x="590" y="370.4456">[Умова: до дедлайну]</text>
+    </g>
+    <!--link Completed to Active-->
+    <g class="link" data-entity-1="ent0004" data-entity-2="ent0003" data-link-type="dependency" data-source-line="43" id="lnk12">
+      <path d="M441.03,502.1059 C422.26,414.1059 386,244.1059 386,244.1059 C386,244.1059 357.0721,225.6969 328.5321,207.5369" fill="none" id="Completed-to-Active" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="323.47,204.3159,328.9158,212.5222,327.6884,207.0001,333.2105,205.7727,323.47,204.3159" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="113.9468" x="444.2615" y="355.3128">Зняття чекбоксу</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="156.4697" x="423" y="370.4456">(Повернення в роботу)</text>
+    </g>
+    <!--link Active to Overdue-->
+    <g class="link" data-entity-1="ent0003" data-entity-2="ent0006" data-link-type="dependency" data-source-line="36" id="lnk8">
+      <path d="M214.43,199.5559 C146.82,218.4459 55,244.1059 55,244.1059 C55,244.1059 55,276.1059 55,276.1059 C55,276.1059 72.1972,286.5187 98.6272,302.5187" fill="none" id="Active-to-Overdue" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="103.76,305.6259,98.1324,297.5432,99.4827,303.0366,93.9894,304.3869,103.76,305.6259" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="173.3608" x="56" y="257.1728">Системна перевірка часу</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="161.1162" x="62.1223" y="272.3056">[Умова: час &gt; дедлайн]</text>
+    </g>
+    <!--link Overdue to Active-->
+    <g class="link" data-entity-1="ent0006" data-entity-2="ent0003" data-link-type="dependency" data-source-line="41" id="lnk11">
+      <path d="M217.5,305.8559 C226.43,289.7559 234,276.1059 234,276.1059 C234,276.1059 254.2111,237.9478 269.3211,209.4278" fill="none" id="Overdue-to-Active" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="272.13,204.1259,264.382,210.2061,269.7892,208.5441,271.4512,213.9514,272.13,204.1259" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="109.2432" x="259.9727" y="257.1728">Зміна дедлайну</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125.1885" x="252" y="272.3056">на майбутнє (Edit)</text>
+    </g>
+    <!--link Active to Active-->
+    <g class="link" data-entity-1="ent0003" data-entity-2="ent0003" data-link-type="dependency" data-source-line="37" id="lnk9">
+      <path d="M355.24,165.0759 C374.96,165.6759 390.1,170.2659 390.1,178.8359 C390.1,187.4059 380.9572,191.8134 361.2372,192.4134" fill="none" id="Active-to-Active" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="355.24,192.5959,364.3575,196.3204,360.2377,192.4439,364.1142,188.3241,355.24,192.5959" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137.7314" x="399.3944" y="175.9028">Редагування тексту</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144.3203" x="396.1" y="191.0356">(Внутрішній перехід)</text>
+    </g>
+    <!--link Overdue to Completed-->
+    <g class="link" data-entity-1="ent0006" data-entity-2="ent0004" data-link-type="dependency" data-source-line="40" id="lnk10">
+      <path d="M200.86,410.8559 C207.72,440.6959 215,472.3959 215,472.3959 C215,472.3959 334,502.3959 334,502.3959 C334,502.3959 339.4441,504.7615 354.6841,511.3615" fill="none" id="Overdue-to-Completed" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="360.19,513.7459,353.5208,506.4987,355.6018,511.7589,350.3416,513.8398,360.19,513.7459" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115.9146" x="248.0684" y="453.4628">Клік по чекбоксу</text>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180.0513" x="216" y="468.5956">(Виконано із запізненням)</text>
+    </g>
+    <!--link Active to *end*-->
+    <g class="link" data-entity-1="ent0003" data-entity-2="ent0005" data-link-type="dependency" data-source-line="46" id="lnk13">
+      <path d="M214.56,198.8559 C144.38,217.8059 47,244.1059 47,244.1059 C47,244.1059 6,440.3959 6,440.3959 C6,440.3959 6,472.3959 6,472.3959 C6,472.3959 215,653.6959 215,653.6959 C215,653.6959 266.7278,676.4302 290.4178,686.8502" fill="none" id="Active-to-*end*" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="295.91,689.2659,289.2822,681.9809,291.3332,687.2528,286.0612,689.3038,295.91,689.2659" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="164.7407" x="7" y="460.9628">Натискання "Видалити"</text>
+    </g>
+    <!--link Completed to *end*-->
+    <g class="link" data-entity-1="ent0004" data-entity-2="ent0005" data-link-type="dependency" data-source-line="47" id="lnk14">
+      <path d="M397.63,606.9859 C365.85,637.0559 333.379,667.7929 317.859,682.4729" fill="none" id="Completed-to-*end*" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="313.5,686.5959,322.7871,683.3173,317.1325,683.1601,317.2898,677.5054,313.5,686.5959" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="164.7407" x="367" y="649.7628">Натискання "Видалити"</text>
+    </g>
+    <!--link Overdue to *end*-->
+    <g class="link" data-entity-1="ent0006" data-entity-2="ent0005" data-link-type="dependency" data-source-line="48" id="lnk15">
+      <path d="M184.7,410.5259 C181.26,451.6059 177,502.3959 177,502.3959 C177,502.3959 177,606.6959 177,606.6959 C177,606.6959 263.0162,664.7002 292.1562,684.3602" fill="none" id="Overdue-to-*end*" style="stroke:#2C3E50;stroke-width:1;"/>
+      <polygon fill="#2C3E50" points="297.13,687.7159,291.9064,679.3664,292.9851,684.9195,287.4321,685.9982,297.13,687.7159" style="stroke:#2C3E50;stroke-width:1;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="164.7407" x="178" y="559.1128">Натискання "Видалити"</text>
+    </g>
+    <!--link Active to GMN2-->
+    <g class="link" data-entity-1="ent0003" data-entity-2="ent0003" data-link-type="association" data-source-line="51" id="lnk4">
+      <path d="M355.57,178.8359 C387.55,178.8359 418.33,178.8359 418.33,178.8359 C418.33,178.8359 551.67,178.8359 551.67,178.8359 C551.67,178.8359 556.35,178.8359 563.97,178.8359" fill="none" id="Active-GMN2" style="stroke:#2C3E50;stroke-width:1;stroke-dasharray:7,7;"/>
+    </g>
+    <?plantuml-src bLLBJnDH5DxFhpYf2riJ3Rw51GaYRbte3bYCxHGQOAQP3XfZJ9G6OK6YCKrDJ0mQ5cu7QAKCRVaBz_uZltFkdUcq9IQqIJlttFFupdSUqzYe-NKtTBSe3BRzIZa8VI-akpDE8xjehBkLu6tDNwCetFPo5virtulUrJsg1vll-E0uDqdzLB6wKB7UrpkwgKvm6gY1_aBwazvHFNMXs-g4L0SFLWO5bkKZHcxaqNk7y7dgbZVM1DjYi1c4TAFwf3fRTSrT45QyqChlpJwPUJqhyeKm3Dwcul9zx-6CY9y7VZGjbH_W_g66m7IWXlgZwgK0rINEUyXcHoMuFy7fEp5cKWb03_HdrHr9MNMe4l7uCdB3BDfZrtjaeYrbUNYF7vJlbvqFGjetC7C6ec9uw5h2uEuJ7ZdgGFNqxWHRmb51_L5T01xWbo76L7mMkjMeL22tGVAOQNu5PAu0kuFUGZcglV6CeddED1aDfpkGua5tCTYgRtgHLp7gsL5gb5eT0UwbRkjz1ar89qP0SCcWnUo5_wgsvI7ZrE8GrqFEIlvDveZsueqNLhOjD7iOYtG8RRRfgcFTr2soVNQgUYQRAFByg1Rubjp3h8Oe3gc_30dV5XSEHaD25JdX2zrqbc-jqkrvmnpDIJSpQKWjIJjvnI-e5YmxvifaoeSztIpOW5oJhjuLBTRGxL7rcZHHj9vZmjr6O5C9ZlnT7Hit09or1AV94zInBS5npMFE1-S01xyPCgBcXx08jrbPy6MNS9SmyIN1tiwnqrFd6JSaTcd_SCFdycux5ZU77tN774yLmqraa4XAd20lr861hVZBwaZrfSNZEKvco3zT7ZxuFcUoLlEkqsQGx7h2Q1Vst3K8ODX2FlZdKP2YJuSnOfgV23KMQ5I6NwA3vXfVPXmuaTQ5-o8c1b2v9qt_8-Np397UvOALqZatHx17ia3sfqSxpVAwP1Od1dV84SvCdIxvaJlE9A3wfR4m-RRhCovcTA8IAxuHzqN0axS3SOkAIvLQXFH6K2Sz8g3jjgj07qfXx41aZKwy4rYHAJRaSUkA8aZB5FytpMGOwSWRoLgKycMsatB5aDijQ4nvXVKA4mbUppPFzlKi7J_0qWjhQ-iH1TLqLHEferpNJAxtGcuwKJDMFv6r0Kf1R0pQOjq2RGVmWR8qZVwfh9S3UUlq8OGTBtK34cS4ubtAJIYBLtLCfoVchMdcWSSaYnfp2KdUR1QicHyxcbDDTiVn_0fnoly0?>
+  </g>
+</svg>
+
+
+</body>
+</html>
