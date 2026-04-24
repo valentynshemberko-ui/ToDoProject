@@ -87,7 +87,7 @@ jobs:
                       <li> <a href="uml/timingDiagram.html">Часова діаграма (Timing Diagram)</a></li>
                   </ul>
           
-                  <h2>Аналіз коду та Метрики (Лабораторна робота)</h2>
+                  <h2>Аналіз коду та Метрики</h2>
                   <ul>
                       <li> <a href="metrics/cloc.txt">Cloc: Об'єм коду</a></li>
                       <li> <a href="metrics/lizard.txt">Lizard: Складність коду</a></li>
