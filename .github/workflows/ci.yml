@@ -51,8 +51,14 @@ jobs:
       - name: Run unit tests
         run: ctest --test-dir build --output-on-failure
 
+      - name: Deploy Qt Dependencies
+        run: |
+          mkdir release_package
+          copy build\QtEx.exe release_package\
+          windeployqt --compiler-runtime release_package\QtEx.exe
+            
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: QtEx-Build-MinGW
-          path: build/QtEx.exe
+          name: QtEx-Release-Windows
+          path: release_package/
